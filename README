@@ -1,5 +1,11 @@
 EA_TeamProject:
 
+Dentro la cartella assets creare una propria cartella con il nome della propria parte e mettere al suo interno SOLO immagini o source esterne;
+Dentro la cartella css create un singolo file .css, con il nome della propria parte, alla quale collegate con un @import il file root.css;
+Dentro la cartella JS create un singolo file .js con il nome della propria parte.
+
+! I NOMI DEVONO ESSERE TUTTI CON IL NOME MINUSCOLO E TUTTI ATTACCATI IN CAMELCASE O UNITI TRAMITE _ !
+
 Team-3:
 Danilo Innocente Carbone
 Roberto Pio Fanara

@@ -208,6 +208,37 @@ footer svg:hover{
 
 }
 
+.inferior-footer{
+    display: flex;
+    justify-content: center;
+    border: solid;
+    height: 40vh;
+}
+
+.ea-png-logo{
+    width: 64px;
+    height: 64px;
+}
+
+.big-links-inf{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 18px;
+    height: 30px;
+    padding: 5px;
+}
+
+.inf-footer-big-links{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    align-content: flex-start;
+    height: 90px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+
 
 
 

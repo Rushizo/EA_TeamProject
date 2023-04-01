@@ -159,6 +159,60 @@ header{
     }
 }
 
+footer svg{
+    width: 22px;
+    height: 22px;
+}
+
+.padding-logo{
+    padding-right: 20px;
+}
+
+.superior-footer{
+    display: flex;
+    background-color: rgb(234, 234, 234);
+    justify-content: center;
+    height: 20vh;
+    padding-top: 3%;
+}
+
+.mini-links-sup{
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 16px;
+}
+
+.mini-links-sup:hover{
+    color: red;
+}
+
+.left-sup-footer-links{
+    margin-left: 80px;
+    height: 55px;
+}
+
+.social-title{
+    font-size: 14px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+
+.social-logo{
+    text-decoration: none;
+}
+
+footer svg:hover{
+    transform: scale(1.5);
+
+}
+
+
+
+
+
+
 
 
 

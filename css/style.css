@@ -30,6 +30,8 @@ header{
 .header-title {
     font-size: 54px;
     color: var(--primary-color);
+    width: 70%;
+    margin-left: 15%;
 }
 
 .header-description{
@@ -37,6 +39,8 @@ header{
     color: var(--primary-color);
     font-weight: 100;
     padding-bottom: 3%;
+    width: 70%;
+    margin-left: 15%;
 }
 
 .header-button{
@@ -74,13 +78,15 @@ header{
         background-image: url(/assets/left-header-image\(width821\).jpg);
         background-repeat: no-repeat;
         background-size: 100% 35vh;
-        padding-top: 10%;
+        padding-top: 5%;
     }
     
     .header-title {
         font-size: 38px;
         color: var(--primary-color);
         padding-bottom: 1%;
+        width: 80%;
+        margin-left: 10%;
     }
     
     .header-description{
@@ -88,6 +94,8 @@ header{
         color: var(--primary-color);
         font-weight: 100;
         padding-bottom: 3%;
+        width: 80%;
+        margin-left: 10%;
     }
     
     .header-button{

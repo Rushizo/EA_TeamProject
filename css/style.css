@@ -366,12 +366,12 @@ footer svg{
 }
 
 .language-button:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
     font-size: 13px ;
 }
 
 .country-button:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
     font-size: 13px ;
 }
 

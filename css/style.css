@@ -211,16 +211,15 @@ footer svg{
     text-decoration: none;
 }
 
-footer svg:hover{
+.left-sup-footer-links svg:hover{
     transform: scale(1.5);
 
 }
 
-.inferior-footer{
+.mid-footer{
     display: flex;
     justify-content: center;
-    border: solid;
-    height: 40vh;
+    margin-top: 25px;
 }
 
 .ea-png-logo{
@@ -228,7 +227,7 @@ footer svg:hover{
     height: 64px;
 }
 
-.big-links-inf{
+.big-links-mid{
     text-decoration: none;
     color: var(--secondary-color);
     font-size: 18px;
@@ -236,7 +235,7 @@ footer svg:hover{
     padding: 5px;
 }
 
-.inf-footer-big-links{
+.mid-footer-big-links{
     display: flex;
     flex-wrap: wrap;
     width: 400px;
@@ -245,6 +244,94 @@ footer svg:hover{
     margin-top: 15px;
     margin-left: 25px;
 }
+
+.country-arrow svg{
+    width: 10px;
+    height: 10px;
+}
+
+.country-button{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    width: 160px;
+    height: 60px;
+    margin-right: 40px;
+}
+
+.country-title{
+    color: var(--button-color);
+}
+
+.country{
+    margin-right: 65px;
+}
+
+.language-button{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    width: 160px;
+    height: 60px;
+}
+
+.language-title{
+    color: var(--button-color);
+    text-align: left;
+    padding-left: 13px;
+}
+
+.language{
+    margin-right: 65px;
+    padding-bottom: 5px;
+}
+
+.language svg{
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+}
+
+.mid-footer-location{
+    margin-top: 20px;
+    margin-left: 280px;
+}
+
+.mid-footer-small-links{
+    display: flex;
+}
+
+.mid-footer-small-links a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.inferior-footer{
+    display: flex;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+}
+
+.trust svg{
+    width: 191px;
+    height: 57px;
+}
+
+.inf-footer-title{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 16px;
+    margin-left: 285px;
+}
+
+.trust-div{
+    margin-left: 432px;
+    margin-top: 20px;
+}
+
+
 
 
 

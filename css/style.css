@@ -173,7 +173,7 @@ footer svg{
 }
 
 .padding-logo{
-    padding-right: 20px;
+    padding-right: 17px;
 }
 
 .superior-footer{
@@ -205,6 +205,7 @@ footer svg{
     font-size: 14px;
     padding-bottom: 10px;
     text-align: right;
+    width: 193px;
 }
 
 .social-logo{
@@ -220,6 +221,10 @@ footer svg{
     display: flex;
     justify-content: center;
     margin-top: 25px;
+}
+
+.ea-footer-logo{
+    margin-left: 20px;
 }
 
 .ea-png-logo{
@@ -238,16 +243,25 @@ footer svg{
 .mid-footer-big-links{
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
+    width: 450px;
     align-content: flex-start;
     height: 90px;
     margin-top: 15px;
-    margin-left: 25px;
+    margin-left: 45px;
 }
 
-.country-arrow svg{
+.arrow svg{
     width: 10px;
     height: 10px;
+}
+
+.arrow2 svg{
+    width: 10px;
+    height: 10px;
+}
+
+.arrow{
+    margin-left: 11px;
 }
 
 .country-button{
@@ -258,14 +272,19 @@ footer svg{
     width: 160px;
     height: 60px;
     margin-right: 40px;
+    border-color: rgb(200,200,200);
+    border-radius: 4px;
+    background-color: var(--primary-color);
 }
 
 .country-title{
     color: var(--button-color);
+    text-align: left;
+    margin-left: 11px;
 }
 
 .country{
-    margin-right: 65px;
+    margin-right: 80px;
 }
 
 .language-button{
@@ -275,28 +294,31 @@ footer svg{
     padding-right: 1px;
     width: 160px;
     height: 60px;
+    border-color: rgb(200,200,200);
+    border-radius: 4px;
+    background-color: var(--primary-color);
 }
 
 .language-title{
     color: var(--button-color);
     text-align: left;
-    padding-left: 13px;
+    padding-left: 10px;
 }
 
 .language{
     margin-right: 65px;
-    padding-bottom: 5px;
+    width: 100px;
+    margin-left: 7px;
 }
 
-.language svg{
+.italy-icon{
     width: 15px;
-    height: 15px;
-    margin-right: 2px;
+    height: 10px;
 }
 
 .mid-footer-location{
     margin-top: 20px;
-    margin-left: 280px;
+    margin-left: 180px;
 }
 
 .mid-footer-small-links{
@@ -323,12 +345,24 @@ footer svg{
     text-decoration: none;
     color: var(--secondary-color);
     font-size: 16px;
-    margin-left: 285px;
+    margin-left: 330px;
+    line-height: 1.8;
 }
 
 .trust-div{
-    margin-left: 432px;
     margin-top: 20px;
+    width: 573px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+ 
+.language-button:active >.arrow2 > svg{
+    transform: rotate(3.142rad);
+}
+
+.country-button:active > .arrow > svg {
+    transform: rotate(3.142rad);
 }
 
 

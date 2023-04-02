@@ -365,6 +365,16 @@ footer svg{
     transform: rotate(3.142rad);
 }
 
+.language-button:hover{
+    transform: scale(1.05);
+    font-size: 13px ;
+}
+
+.country-button:hover{
+    transform: scale(1.05);
+    font-size: 13px ;
+}
+
 
 
 

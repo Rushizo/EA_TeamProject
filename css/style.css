@@ -375,6 +375,37 @@ footer svg{
     font-size: 13px ;
 }
 
+#toggle-menu{
+    position: absolute;
+    top: 146px;
+    right: 380px;
+    background-color: white;
+    width: 640px;
+    height: 600px;
+    border: solid rgb(200,200,200);
+    display: none;
+}
+
+.column{
+    text-decoration: none;
+    color: var(--secondary-color);
+    border: solid;
+    font-size: 25px;
+}
+
+#toggle-menu2{
+    position: absolute;
+    top: 146px;
+    right: 170px;
+    background-color: white;
+    width: 480px;
+    height: 600px;
+    border: solid rgb(200,200,200);
+    display: none;
+}
+
+
+
 
 
 

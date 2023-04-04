@@ -5,7 +5,7 @@ let isClicked2 = true;
 
 let showOrHide = function(){
     if (isClicked){
-    divContainer.style.display = "block";
+    divContainer.style.display = "flex";
     divContainer2.style.display = "none";
     isClicked = false;
     isClicked2 = true;
@@ -17,7 +17,7 @@ let showOrHide = function(){
 
 let showOrHide2 = function(){
     if (isClicked2){
-    divContainer2.style.display = "block";
+    divContainer2.style.display = "flex";
     divContainer.style.display = "none";
     isClicked2 = false;
     isClicked = true;

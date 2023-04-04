@@ -357,11 +357,11 @@ footer svg{
     align-items: flex-end;
 }
  
-.language-button:active >.arrow2 > svg{
+.language-button:focus >.arrow2 > svg{
     transform: rotate(3.142rad);
 }
 
-.country-button:active > .arrow > svg {
+.country-button:focus > .arrow > svg {
     transform: rotate(3.142rad);
 }
 
@@ -377,20 +377,83 @@ footer svg{
 
 #toggle-menu{
     position: absolute;
-    top: 146px;
+    top: 196px;
     right: 380px;
     background-color: white;
-    width: 640px;
-    height: 600px;
-    border: solid rgb(200,200,200);
+    width: 590px;
+    height: 550px;
     display: none;
+    border: solid rgb(200,200,200);
 }
 
-.column{
+.state a{
     text-decoration: none;
     color: var(--secondary-color);
-    border: solid;
-    font-size: 25px;
+    font-size: 15px;
+}
+
+.first-column{
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+
+.second-column{
+    margin-top: 20px;
+}
+
+.third-column{
+    margin-top: 20px;
+}
+
+.fourth-column{
+    margin-top: 20px;
+}
+
+.first-column  div{
+    width: 126px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    border-bottom: rgb(200,200,200) solid 1px;
+}
+
+.second-column div{
+    margin-right: 20px;
+    width: 124px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    border-bottom: rgb(200,200,200) solid 1px;
+}
+
+.third-column div{
+    margin-right: 20px;
+    width: 124px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    border-bottom: rgb(200,200,200) solid 1px;
+}
+
+.fourth-column div{
+    width: 74px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    border-bottom: rgb(200,200,200) solid 1px;
+}
+
+.first-column div:last-child,
+.second-column div:last-child,
+.third-column div:last-child,
+.fourth-column div:last-child{
+    border: none;
+}
+
+#toggle-menu a:hover{
+    border:solid white 10px;
 }
 
 #toggle-menu2{

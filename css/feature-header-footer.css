@@ -185,11 +185,14 @@ footer svg{
 }
 
 .mini-links-sup{
-    text-decoration: none;
-    color: var(--secondary-color);
     margin-left: 25px;
     margin-right: 25px;
     font-size: 16px;
+}
+
+.mini-links-sup a{
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 .mini-links-sup:hover{
@@ -505,6 +508,134 @@ footer svg{
 
 .second-column-flag{
     margin-right: 30px;
+}
+
+@media (max-width: 821px){
+
+    .superior-footer{
+        display: block;
+    }
+
+    .right-sup-footer-links{
+        width: 70%;
+        margin-left: 8%;
+        height: 60px;
+    }
+
+    .big-links-mid{
+        font-size: 16px;
+    }
+
+    .mini-links-sup{
+        margin-left: 0px;
+    }
+
+    .left-sup-footer-links{
+        width: 84%;
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+
+    .social-title{
+        margin-left: -12px;
+    }
+
+    .mid-footer{
+        display: block;
+    }
+
+    .ea-png-logo{
+        width: 47px;
+        height: 47px;
+    }
+
+    .ea-footer-logo{
+        margin-left: 8%;
+    }
+
+    .mid-footer-big-links{
+        width: 84%;
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+
+    .mid-footer-location{
+        margin-left: 8%;
+    }
+
+    .inferior-footer{
+        display: block;
+    }
+
+    .inf-footer-title-container{
+        width: 84%;
+        margin-right: 8%;
+        margin-left: 8%;
+        padding: 0;
+    }
+
+    .inf-footer-title{
+        margin:0;
+        font-size: 14px;
+    }
+
+    .trust-div{
+        width: 84%;
+        margin-right: 8%;
+        margin-left: 8%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .country-button{
+        width: 329.5px;
+        height: 65.5px;
+    }
+
+    .country{
+        margin-right: 250px;
+    }
+
+    .language-button{
+        width: 329.5px;
+        height: 65.5px;
+    }
+
+    .language{
+        margin-right: 235px;
+    }
+}
+
+@media (max-width: 391px){
+    .mid-footer-big-links{
+        height: 100px;
+        width: 310px;
+    }
+
+    .big-links-mid{
+        padding: 2px;
+    }
+
+    .country-button{
+        margin-bottom: 27px;
+    }
+
+    .right-sup-footer-links{
+        width: 84%;
+        margin-right: 8%;
+        margin-left: 8%;
+        border-bottom:solid 1px;
+        padding-bottom: 15px;
+    }
+
+    .social-title{
+        margin-left: -15px;
+        margin-top: 20px;
+    }
+
+    .superior-footer{
+        height: 230px;
+    }
 }
 
 

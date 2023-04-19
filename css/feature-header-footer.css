@@ -348,8 +348,11 @@ footer svg{
     text-decoration: none;
     color: var(--secondary-color);
     font-size: 16px;
-    margin-left: 333px;
     line-height: 1.8;
+}
+
+.inf-footer-title-container{
+    margin-left: 332px;
 }
 
 .trust-div{
@@ -520,6 +523,8 @@ footer svg{
         width: 70%;
         margin-left: 8%;
         height: 60px;
+        line-height: 2;
+        margin-bottom: 20px;
     }
 
     .big-links-mid{
@@ -538,6 +543,7 @@ footer svg{
 
     .social-title{
         margin-left: -12px;
+        margin-bottom: 10px;
     }
 
     .mid-footer{
@@ -554,8 +560,7 @@ footer svg{
     }
 
     .mid-footer-big-links{
-        width: 84%;
-        margin-right: 8%;
+        width: 70%;
         margin-left: 8%;
     }
 
@@ -625,7 +630,8 @@ footer svg{
         margin-right: 8%;
         margin-left: 8%;
         border-bottom:solid 1px;
-        padding-bottom: 15px;
+        padding-bottom: 55px;
+        line-height: 2.2;
     }
 
     .social-title{
@@ -634,7 +640,7 @@ footer svg{
     }
 
     .superior-footer{
-        height: 230px;
+        height: 280px;
     }
 }
 

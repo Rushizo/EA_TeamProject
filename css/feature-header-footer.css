@@ -4,9 +4,6 @@ header{
     display: flex;
     height: 55vh;
     margin-top: 6rem;
-}
-
-header, footer{
     overflow-x: hidden;
 }
 
@@ -16,7 +13,6 @@ header, footer{
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 1%;
 }
 
 .right-header-image{
@@ -30,7 +26,6 @@ header, footer{
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 1%;
 }
 
 .header-title {
@@ -163,7 +158,6 @@ header, footer{
         width: 331.85px;
         height: 50.4px;
         color: var(--button-color);
-        border: none;
         border-radius: 4px;
     }
     
@@ -174,6 +168,10 @@ header, footer{
 }
 
 /* FOOTER ------------------------------------------------------------------------------------*/
+
+footer{
+    overflow-x: hidden;
+}
 
 .check1{
     width: 15px;
@@ -215,10 +213,6 @@ header, footer{
     color: var(--secondary-color);
 }
 
-.mini-links-sup a:hover{
-    color: red;
-}
-
 .left-sup-footer-links{
     margin-left: 80px;
     height: 55px;
@@ -233,19 +227,6 @@ header, footer{
 
 .social-logo{
     text-decoration: none;
-}
-
-.language-button:focus >.arrow2 > .arrow2-svg{
-    transform: rotate(3.142rad);
-}
-
-.country-button:focus > .arrow > .arrow-svg{
-    transform: rotate(3.142rad);
-}
-
-.svg-social:hover{
-    transform: scale(1.5);
-
 }
 
 .mid-footer{
@@ -296,10 +277,6 @@ header, footer{
 }
 
 .country-button{
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 1px;
-    padding-right: 1px;
     width: 160px;
     height: 60px;
     margin-right: 40px;
@@ -319,10 +296,6 @@ header, footer{
 }
 
 .language-button{
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 1px;
-    padding-right: 1px;
     width: 160px;
     height: 60px;
     border-color: rgb(200,200,200);
@@ -391,16 +364,6 @@ header, footer{
     align-items: flex-end;
 }
  
-.language-button:hover{
-    transform: scale(1.03);
-    font-size: 13px ;
-}
-
-.country-button:hover{
-    transform: scale(1.03);
-    font-size: 13px ;
-}
-
 #toggle-menu{
     position: absolute;
     top: 196px;
@@ -408,7 +371,7 @@ header, footer{
     background-color: white;
     width: 590px;
     height: 550px;
-    visibility:hidden;
+    visibility: hidden;
     display: flex;
     border: solid rgb(200,200,200);
 }
@@ -482,10 +445,6 @@ header, footer{
     border: none;
 }
 
-.state a:hover{
-    margin-left: 10px;
-}
-
 #toggle-menu2{
     position: absolute;
     top: 176px;
@@ -545,6 +504,36 @@ header, footer{
 
 .line-language a:hover{
     padding-left: 10px;
+}
+
+.mini-links-sup a:hover{
+    color: red;
+}
+
+.language-button:focus >.arrow2 > .arrow2-svg{
+    transform: rotate(3.142rad);
+}
+
+.country-button:focus > .arrow > .arrow-svg{
+    transform: rotate(3.142rad);
+}
+
+.svg-social:hover{
+    transform: scale(1.5);
+}
+
+.language-button:hover{
+    transform: scale(1.03);
+    font-size: 13px ;
+}
+
+.country-button:hover{
+    transform: scale(1.03);
+    font-size: 13px ;
+}
+
+.state a:hover{
+    margin-left: 10px;
 }
 
 @media (max-width: 821px){
@@ -644,11 +633,6 @@ header, footer{
         margin-right: 235px;
     }
 
-    .country-button:focus,
-    .language-button:focus{
-        border-color: rgb(255, 170, 0);
-    }
-
     #toggle-menu{
         position: absolute;
         top: 55px;
@@ -720,6 +704,11 @@ header, footer{
     .check1, .check2{
         display: none; 
     }
+
+    .country-button:focus,
+    .language-button:focus{
+        border-color: rgb(255, 170, 0);
+    }
 }
 
 @media (max-width: 391px){
@@ -763,7 +752,7 @@ header, footer{
         width: 324px;
         height: 970px;
         display: block;
-        visibility:hidden;
+        visibility: hidden;
         border: solid rgb(200,200,200);
         border-radius: 5px;
     }

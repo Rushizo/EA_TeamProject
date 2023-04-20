@@ -369,14 +369,6 @@ header, footer{
     align-items: flex-end;
 }
  
-.language-button:focus >.arrow2 > svg{
-    transform: rotate(3.142rad);
-}
-
-.country-button:focus > .arrow > svg {
-    transform: rotate(3.142rad);
-}
-
 .language-button:hover{
     transform: scale(1.03);
     font-size: 13px ;
@@ -394,7 +386,8 @@ header, footer{
     background-color: white;
     width: 590px;
     height: 550px;
-    display: none;
+    visibility:hidden;
+    display: flex;
     border: solid rgb(200,200,200);
 }
 
@@ -479,7 +472,8 @@ header, footer{
     width: 530px;
     height: 570px;
     border: solid rgb(200,200,200);
-    display: none;
+    visibility:hidden;
+    display: flex;
 }
 
 .language-states{
@@ -635,9 +629,11 @@ header, footer{
         background-color: white;
         width: 334px;
         height: 970px;
-        display: none;
+        display: block;
+        visibility: hidden;
         border: solid rgb(200,200,200);
         border-radius: 5px;
+        overflow: auto;
     }
 
     #toggle-menu2{
@@ -647,9 +643,11 @@ header, footer{
         background-color: white;
         width: 334px;
         height: 970px;
-        display: none;
+        display: block;
+        visibility:hidden;
         border: solid rgb(200,200,200);
         border-radius: 5px;
+        overflow: auto;
     }
 
     .country-icons{
@@ -663,10 +661,29 @@ header, footer{
         border-bottom: none;
     }
 
+    .first-column,
+    .second-column,
+    .third-column,
+    .fourth-column{
+        margin: 0;
+        padding: 0;
+    }
+
     .first-column-flag div,
     .second-column-flag div,
     .third-column-flag div{
         border-bottom: none;
+    }
+
+    .first-column-flag,
+    .second-column-flag,
+    .third-column-flag{
+        margin: 0;
+        padding: 0;
+    }
+
+    .x-state{
+        margin-left: 5px;
     }
 }
 
@@ -710,7 +727,8 @@ header, footer{
         background-color: white;
         width: 324px;
         height: 970px;
-        display: none;
+        display: block;
+        visibility:hidden;
         border: solid rgb(200,200,200);
         border-radius: 5px;
     }
@@ -722,7 +740,8 @@ header, footer{
         background-color: white;
         width: 324px;
         height: 1060px;
-        display: none;
+        display: block;
+        visibility:hidden;
         border: solid rgb(200,200,200);
         border-radius: 5px;
     }

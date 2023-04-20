@@ -4,6 +4,10 @@ header{
     margin-top: 6rem;
 }
 
+header, footer{
+    overflow-x: hidden;
+}
+
 .right-header{
     width: 50%;
     background-image: url(/assets/right-header-image.jpg);
@@ -132,10 +136,10 @@ header{
     
     .left-header{
         width: 100%;
-        height: 70vh;
+        height: 36.5vh;
         background-image: url(/assets/left-header-image\(width391\).jpg);
         background-repeat: no-repeat;
-        background-size: 100% 350px;
+        background-size: 100%;
         padding-top: 10%;
     }
     
@@ -167,7 +171,9 @@ header{
     }
 }
 
-footer svg{
+/* FOOTER */
+
+.svg-social{
     width: 22px;
     height: 22px;
 }
@@ -195,7 +201,7 @@ footer svg{
     color: var(--secondary-color);
 }
 
-.mini-links-sup:hover{
+.mini-links-sup a:hover{
     color: red;
 }
 
@@ -215,7 +221,7 @@ footer svg{
     text-decoration: none;
 }
 
-.left-sup-footer-links svg:hover{
+.svg-social:hover{
     transform: scale(1.5);
 
 }
@@ -253,12 +259,12 @@ footer svg{
     margin-left: 45px;
 }
 
-.arrow svg{
+.arrow-svg{
     width: 10px;
     height: 10px;
 }
 
-.arrow2 svg{
+.arrow2-svg{
     width: 10px;
     height: 10px;
 }

@@ -717,16 +717,8 @@ header, footer{
         margin-left: 5px;
     }
 
-    .check1{
-        width: 15px;
-        height: 15px;
-        padding-left: 90px;  
-    }
-    
-    .check2{
-        width: 15px;
-        height: 15px;
-        padding-left: 90px;
+    .check1, .check2{
+        display: none; 
     }
 }
 
@@ -793,16 +785,8 @@ header, footer{
         display: none;
     }
 
-    .check1{
-        width: 15px;
-        height: 15px;
-        padding-left: 90px;  
-    }
-    
-    .check2{
-        width: 15px;
-        height: 15px;
-        padding-left: 90px;
+    .check1, .check2{
+        display: none; 
     }
 }
 

@@ -1,3 +1,5 @@
+/* HEADER ------------------------------------------------------------------------------------*/
+
 header{
     display: flex;
     height: 55vh;
@@ -171,7 +173,19 @@ header, footer{
     }
 }
 
-/* FOOTER */
+/* FOOTER ------------------------------------------------------------------------------------*/
+
+.check1{
+    width: 15px;
+    height: 15px;
+    padding-left: 50px;  
+}
+
+.check2{
+    width: 15px;
+    height: 15px;
+    padding-left: 50px;
+}
 
 .svg-social{
     width: 22px;
@@ -219,6 +233,14 @@ header, footer{
 
 .social-logo{
     text-decoration: none;
+}
+
+.language-button:focus >.arrow2 > .arrow2-svg{
+    transform: rotate(3.142rad);
+}
+
+.country-button:focus > .arrow > .arrow-svg{
+    transform: rotate(3.142rad);
 }
 
 .svg-social:hover{
@@ -522,7 +544,7 @@ header, footer{
 }
 
 .line-language a:hover{
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
 @media (max-width: 821px){
@@ -622,6 +644,11 @@ header, footer{
         margin-right: 235px;
     }
 
+    .country-button:focus,
+    .language-button:focus{
+        border-color: rgb(255, 170, 0);
+    }
+
     #toggle-menu{
         position: absolute;
         top: 55px;
@@ -644,10 +671,14 @@ header, footer{
         width: 334px;
         height: 970px;
         display: block;
-        visibility:hidden;
+        visibility: hidden;
         border: solid rgb(200,200,200);
         border-radius: 5px;
         overflow: auto;
+    }
+
+    .asian-states{
+        margin: 0;
     }
 
     .country-icons{
@@ -682,8 +713,20 @@ header, footer{
         padding: 0;
     }
 
-    .x-state{
+    .x-state, .asian-states{
         margin-left: 5px;
+    }
+
+    .check1{
+        width: 15px;
+        height: 15px;
+        padding-left: 90px;  
+    }
+    
+    .check2{
+        width: 15px;
+        height: 15px;
+        padding-left: 90px;
     }
 }
 
@@ -748,6 +791,18 @@ header, footer{
     
     .country-icons{
         display: none;
+    }
+
+    .check1{
+        width: 15px;
+        height: 15px;
+        padding-left: 90px;  
+    }
+    
+    .check2{
+        width: 15px;
+        height: 15px;
+        padding-left: 90px;
     }
 }
 

@@ -14,6 +14,8 @@
     --primary-color: rgb(255,255,255);
     --secondary-color: rgb(16,16,16);
     --cards-titles-color: #FF4747;
+    --button-color: rgb(74, 74, 74);
+    --page-color:rgb(243,243,243);
 }
 
 *{

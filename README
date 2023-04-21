@@ -9,16 +9,13 @@ EA_TeamProject:
 
 ! I NOMI DEVONO ESSERE TUTTI CON IL NOME MINUSCOLO E TUTTI ATTACCATI IN CAMELCASE O UNITI TRAMITE _ !
 
-Team-3:
-Danilo Innocente Carbone
-Roberto Pio Fanara
-Giuseppe Bianconi
-Paolo Galitelli
-Benjamin Scalari
+Le parti assegnate per ora sono le seguenti:
 
-Sezioni da spartire:
-NavBar;
-Header & Footer;
-Body1: Giochi in evidenza;
-Body2: Ultime novità;
-Body3: EA Play;
+Danilo Innocente Carbone: "Body2: Ultime Novità";
+Roberto Fanara: "Body1: Giochi in Evidenza"; 
+Giuseppe Bianconi: "Header & Footer";
+Paolo Gallitelli: "NavBar";
+Benjamin Scalari: "Body 3: EA Play"
+
+Le parti assegnate per ora sono queste dato che non abbiamo ancora avuto occasione di incontrarci tutti;
+se qualcosa non vi va bene o volete cambiare qualcosa scrivetelo e ne parliamo.

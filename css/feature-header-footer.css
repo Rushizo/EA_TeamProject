@@ -643,7 +643,7 @@ footer{
 
     #toggle-menu{
         position: absolute;
-        top: 55px;
+        top: 1875px;
         right: 420px;
         background-color: white;
         width: 334px;
@@ -658,7 +658,7 @@ footer{
 
     #toggle-menu2{
         position: absolute;
-        top: 55px;
+        top: 1875px;
         right: 47px;
         background-color: white;
         width: 334px;
@@ -758,8 +758,8 @@ footer{
 
     #toggle-menu{
         position: absolute;
-        top: 200px;
         right: 30px;
+        top: 3578px;
         background-color: white;
         width: 324px;
         height: 970px;
@@ -771,7 +771,7 @@ footer{
 
     #toggle-menu2{
         position: absolute;
-        top: 200px;
+        top: 3579px;
         right: 30px;
         background-color: white;
         width: 324px;

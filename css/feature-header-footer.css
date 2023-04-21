@@ -353,7 +353,7 @@ footer{
 }
 
 .inf-footer-title-container{
-    border: solid;
+    width: 660px;
 }
 
 .trust-div{
@@ -361,7 +361,8 @@ footer{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    border: solid;
+    position: relative;
+    left: 137px;
 }
  
 #toggle-menu{
@@ -621,6 +622,8 @@ footer{
         margin-left: 8%;
         display: flex;
         justify-content: flex-start;
+        position: relative;
+        left: 0px;
     }
 
     .country-button{

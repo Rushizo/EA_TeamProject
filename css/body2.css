@@ -343,5 +343,6 @@
         box-shadow: 2px 2px 7px 3px rgba(0, 0, 0, 0.3) ;
         transition: 400ms ease-in-out 25ms;
         overflow: hidden;
+        overflow-x: hidden;
     }
 }

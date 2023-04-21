@@ -366,7 +366,7 @@ footer{
  
 #toggle-menu{
     position: absolute;
-    top: 1460px;
+    bottom: -1260px;
     right: 380px;
     background-color: white;
     width: 590px;
@@ -448,7 +448,7 @@ footer{
 
 #toggle-menu2{
     position: absolute;
-    top: 1440px;
+    bottom: -1260px;
     right: 170px;
     background-color: white;
     width: 530px;
@@ -643,7 +643,7 @@ footer{
 
     #toggle-menu{
         position: absolute;
-        top: 1875px;
+        bottom: -1670px;
         right: 420px;
         background-color: white;
         width: 334px;
@@ -658,7 +658,7 @@ footer{
 
     #toggle-menu2{
         position: absolute;
-        top: 1875px;
+        bottom: -1668px;
         right: 47px;
         background-color: white;
         width: 334px;
@@ -759,7 +759,7 @@ footer{
     #toggle-menu{
         position: absolute;
         right: 30px;
-        top: 3578px;
+        bottom: -3710px;
         background-color: white;
         width: 324px;
         height: 970px;
@@ -771,7 +771,7 @@ footer{
 
     #toggle-menu2{
         position: absolute;
-        top: 3579px;
+        bottom: -3800px;
         right: 30px;
         background-color: white;
         width: 324px;

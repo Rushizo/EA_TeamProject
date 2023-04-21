@@ -12,7 +12,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1100px;
 }
 
 .ultime-novità-container .ultime-novità h2 {
@@ -27,9 +26,9 @@
 }
 
 .ultime-novità-container .ultime-novità .selection-bar{
-    width: 100%;
+    width: 100vw;
     height: 25px;
-   
+    height: fit-content;
 }
 
 
@@ -60,9 +59,9 @@
     max-width: 1100px;
     margin: 5px;
     display: flex;
-    flex-direction: column;
     gap: 1.5rem;
     margin-top: 40px;
+    flex-wrap: wrap;
     
 }
 
@@ -70,16 +69,9 @@
     display: none;
 }
 
-
-
-.ultime-novità-container .card-container .three-cards{
-    display: flex;
-    gap: 1rem;
-}
-
 .ultime-novità-container .card-container .card{
     border: 1px solid lightgray;
-    width: 33.33%;
+    width: 31.6%;
     height: 480px;
     box-shadow: 2px 2px 7px 3px rgba(0, 0, 0, 0.3) ;
     transition: 400ms ease-in-out 25ms;
@@ -342,3 +334,13 @@
     padding: 16px 24px 16px 24px;
 }
 
+@media (max-width: 821px){
+    .ultime-novità-container .card-container .card{
+        border: 1px solid lightgray;
+        width: 48%;
+        height: 480px;
+        box-shadow: 2px 2px 7px 3px rgba(0, 0, 0, 0.3) ;
+        transition: 400ms ease-in-out 25ms;
+        overflow: hidden;
+    }
+}

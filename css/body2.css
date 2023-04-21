@@ -1,0 +1,346 @@
+@import url(./root.css);
+
+ .ultime-novità-container{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+} 
+
+.ultime-novità-container .ultime-novità{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ultime-novità-container .ultime-novità h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.horizontal-rule{
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 25px;
+}
+
+.ultime-novità-container .ultime-novità .selection-bar{
+    width: 100vw;
+    height: 25px;
+    height: fit-content;
+}
+
+
+
+.ultime-novità-container .ultime-novità .selection-bar button{
+    border: none;
+    font-size: 18px ;
+    margin: 0 10px 0 10px;
+    border-left: 1px solid lightgray;
+    padding: 10px;
+    background-color: white;
+}
+ 
+.ultime-novità-container .ultime-novità .selection-bar button:hover{
+    background-color: rgba(163, 162, 162, 0.3);
+    color: rgb(80, 80, 80)
+}
+
+.ultime-novità-container .ultime-novità .selection-bar button:focus{
+    background-color: rgba(163, 162, 162, 0.3);
+    color: rgb(80, 80, 80);
+    border-bottom: 1px solid red;
+}
+
+/* CARD */
+
+.ultime-novità-container .card-container{
+    max-width: 1100px;
+    margin: 5px;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    
+}
+
+.container2, .container3, .container4, .container5, .container6, .container7, .container8{
+    display: none;
+}
+
+.ultime-novità-container .card-container .card{
+    border: 1px solid lightgray;
+    width: 31.6%;
+    height: 480px;
+    box-shadow: 2px 2px 7px 3px rgba(0, 0, 0, 0.3) ;
+    transition: 400ms ease-in-out 25ms;
+    overflow: hidden;
+}
+
+.ultime-novità-container .card-container .card-f1{
+    height: 398px;
+}
+
+.ultime-novità-container .card-container .card-fifa{
+    height: 565px;
+}
+
+
+.ultime-novità-container .card-container .card .cards-image{
+    width: 100%;
+    height: 234px;
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/images/2023/04/phill-gdc-blog-lead-asset.jpg.adapt.crop16x9.431p.jpg);
+    background-size: cover;
+}
+
+.ultime-novità-container .card-container .card .cards-image1{
+    width: 100%;
+    height: 173px;
+    background-size: cover;
+}
+
+.ultime-novità-container .card-container .card .image1{
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/common/logo-ea-sports-fc.png.adapt.crop16x9.431p.png);
+}
+
+.ultime-novità-container .card-container .card .image2{
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/images/2023/03/image4.png.adapt.crop16x9.431p.png);
+}
+
+.ultime-novità-container .card-container .card .image3{
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/common/f1-23-new-sportsperson-blog-featured-image-16x9.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image4{
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/images/2022/07/eacom-general-featured-image-16x9.png.adapt.crop16x9.431p.png);
+}
+
+.ultime-novità-container .card-container .card .image5{
+    background-image: url(https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/apex-legends-mobile-faq/common/apex-mobile-announce-art-3840x2160.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image6{
+    background-image: url(https://media.contentapi.ea.com/content/dam/ea/starwars/star-wars-jedi-survivor/news/common/swjs-ea-play-pro-benefits-featured-img.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image7{
+    background-image: url(https://media.contentapi.ea.com/content/dam/news/ea-play-subscription/images/2020/12/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image8{
+    background-image: url(https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-21/news/common/eaplay-socialpost-spotlight-fifa21-16x9.png.adapt.crop16x9.431p.png);
+}
+
+.ultime-novità-container .card-container .card .image9{
+    background-image: url(https://media.contentapi.ea.com/content/dam/news/ea-play-subscription/images/2020/12/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image10{
+    background-image: url(https://media.contentapi.ea.com/content/dam/news/ea-play-subscription/images/2021/03/ea-image-210316-game-pass-article-eaonlycore-16x9.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image11{
+    background-image: url(https://media.contentapi.ea.com/content/dam/news/ea-play-subscription/images/2020/12/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image12{
+    background-image: url(https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-23/news/pitch-notes/commom/uwcl-nwsl-deep-dive/pitchnotes-ucwl-nwsl.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image13{
+    background-image: url(https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-23/news/pitch-notes/commom/uwcl-nwsl-deep-dive/pitchnotes-ucwl-nwsl.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image14{
+    background-image: url(https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-23/common/feature-image/featured-image-16x9.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image15{
+    background-image: url(https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-23/world-cup/images/2022/11/wc-predictor-trophy-image-16x9-carousel-1-1.png.adapt.crop16x9.431p.png);
+}
+
+.ultime-novità-container .card-container .card .image16{
+    background-image: url(https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-23/world-cup/images/2022/10/f23-worldcup-featureimg-16x9.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image17{
+    background-image: url(https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-23/images/2022/10/main.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image18{
+    background-image: url(https://media.contentapi.ea.com/content/dam/ea/f1/f1-2022/common/f122-featured-image-patch.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image19{
+    background-image: url(https://media.contentapi.ea.com/content/dam/ea/f1/f1-2022/common/alfa-romeo-update-fpo-featured-image-jpg.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image20{
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/common/f1-23-new-sportsperson-blog-featured-image-16x9.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image21{
+    background-image: url(https://media.contentapi.ea.com/content/dam/ea/f1/f1-2022/common/podium-pass-5-article/f122-podium-pass-5-featured-fpo.png.adapt.crop16x9.431p.png);
+}
+
+.ultime-novità-container .card-container .card .image22{
+    background-image: url(https://media.contentapi.ea.com/content/dam/ea/f1/f1-2022/common/pj-f122-abu-018-alb.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image23{
+    background-image: url(https://media.contentapi.ea.com/content/dam/ea/f1/f1-2022/common/podium-pass-4-featured-fpo-png.adapt.crop16x9.431p.);
+}
+
+.ultime-novità-container .card-container .card .image24{
+    background-image: url(https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/sun-squad-collection-event/apex-sunsquad-featured-image.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image25{
+    background-image: url(https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/imperial-collection-event/apex-imperial-guard-ce-primary-art-3840x2160-secondary.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image26{
+    background-image: url(https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/fourth-anniversary-collection-event/anniversary-ce-featured-img.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image27{
+    background-image: url(https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/revelry-patch-notes/apex-legends-revelry-patch-notes-featured-image.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image28{
+    background-image: url(https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/revelry-season-game-updates/apex-legends-revelry-updates-featuredimage.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image29{
+    background-image: url(https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/revelry-dev-video-blog/apex-revelry-devblog-featured-image.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image30{
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/SIMS/images/2019/04/ts4-grid-tile-patch-notes-game-update-16x9.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image31{
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/SIMS/common/ts4-sp40-official-screens-02-003-16x9.png.adapt.crop16x9.431p.png);
+}
+
+.ultime-novità-container .card-container .card .image32{
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/SIMS/common/laundry-list-assets/port-of-marriage.png.adapt.crop16x9.431p.png);
+}
+
+.ultime-novità-container .card-container .card .image33{
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/SIMS/common/03-06-23-10-38-50-am.png.adapt.crop16x9.431p.png);
+}
+
+.ultime-novità-container .card-container .card .image34{
+    background-image: url(https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/4-1-1-update-notes-fpo.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image35{
+    background-image: url(https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/season-04-mid-season-event/bf-2042-s4-mse-16x9-featured.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image36{
+    background-image: url(https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/4-1-0-update-notes-fpo.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image37{
+    background-image: url(https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/patch-401-feature-image-fpo.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image38{
+    background-image: url(https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/patch-4-0-0/4-0-0-featured-image-fpo.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image39{
+    background-image: url(https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/feb-dev-briefing-featured-image.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image40{
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/images/2022/07/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png);
+}
+
+.ultime-novità-container .card-container .card .image41{
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/inside-ea/common/inside-ea-2022-wordmark-over-heritage-shapes-featured-image.png.adapt.crop16x9.431p.png);
+}
+
+.ultime-novità-container .card-container .card .image42{
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/inside-ea/images/2022/04/maxiswebsite-brand-logo.jpg.adapt.crop16x9.431p.jpg);
+}
+
+.ultime-novità-container .card-container .card .image43{
+    background-image: url(https://media.contentapi.ea.com/content/dam/news/www-ea/en-us/common/ea-blog-post-social-impact-image.png.adapt.crop16x9.431p.png);
+}
+
+.ultime-novità-container .card-container .card .image44{
+    background-image: url(https://media.contentapi.ea.com/content/dam/firemonkeys/images/2022/01/sfp-insideea-blog-thumbnail-studio-shot.jpg.adapt.crop16x9.431p.jpg);
+}
+
+
+
+
+.ultime-novità-container .card-container .card .card-bottom-part{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary-color);
+}
+
+.ultime-novità-container .card-container .card .card-bottom-part .cards-pretitle{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.card-container .card .card-bottom-part .cards-pretitle h2{
+    color: var(--cards-titles-color);
+    font-size: 14px;
+}
+
+.card-container .card .card-bottom-part .cards-pretitle span{
+    margin-left: 14px;
+}
+
+.card-container .card .card-bottom-part h4{
+   font-size: 22px;
+}
+
+.card-container .card .card-bottom-part .description{
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.ultime-novità-container .card-container .card:hover{
+    margin-top: -10px;
+    box-shadow: 5px 10px 8px 5px rgba(0, 0, 0, 0.3) ;
+    transition: ease-in-out 0.4s;
+}
+
+/* BUTTON */
+
+.dettagli-button{
+    margin-top: 40px;
+    font-size: 18px;
+    background-color: white;
+    padding: 12px 20px 12px 20px;
+    border: 2px solid var(--secondary-color);
+    transition: 200ms ease-in-out 25ms;
+}
+
+.dettagli-button:hover{
+    padding: 16px 24px 16px 24px;
+}
+
+@media (max-width: 821px){
+    .ultime-novità-container .card-container .card{
+        border: 1px solid lightgray;
+        width: 48%;
+        height: 480px;
+        box-shadow: 2px 2px 7px 3px rgba(0, 0, 0, 0.3) ;
+        transition: 400ms ease-in-out 25ms;
+        overflow: hidden;
+    }
+}

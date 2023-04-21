@@ -24,7 +24,6 @@ let clicked = true;
 $notizieEa.addEventListener("click", () => {
     if(clicked){
         $container1.style.display = "block";
-        
         $container2.style.display = "none";
         $container3.style.display = "none";
         $container4.style.display = "none";

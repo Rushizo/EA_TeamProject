@@ -326,3 +326,19 @@
     box-shadow: 5px 10px 8px 5px rgba(0, 0, 0, 0.3) ;
     transition: ease-in-out 0.4s;
 }
+
+/* BUTTON */
+
+.dettagli-button{
+    margin-top: 40px;
+    font-size: 18px;
+    background-color: white;
+    padding: 12px 20px 12px 20px;
+    border: 2px solid var(--secondary-color);
+    transition: 200ms ease-in-out 25ms;
+}
+
+.dettagli-button:hover{
+    padding: 16px 24px 16px 24px;
+}
+

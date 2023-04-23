@@ -4,6 +4,7 @@ header{
     display: flex;
     height: 400px;
     margin-top: 6rem;
+    overflow-x: hidden;
 }
 
 .right-header{
@@ -63,6 +64,7 @@ header{
         display: flex;
         height: 40vh;
         margin-top: 6rem;
+        overflow-x: hidden;
     }
     
     .right-header{
@@ -119,6 +121,7 @@ header{
         display: block;
         margin-top: 6rem;
         height: 68vh;
+        overflow-x: hidden;
     }
     
     .right-header{
@@ -367,7 +370,7 @@ footer{
  
 #toggle-menu{
     position: absolute;
-    bottom: -1260px;
+    bottom: -1279px;
     right: 380px;
     background-color: white;
     width: 590px;
@@ -449,7 +452,7 @@ footer{
 
 #toggle-menu2{
     position: absolute;
-    bottom: -1260px;
+    bottom: -1279px;
     right: 170px;
     background-color: white;
     width: 530px;
@@ -546,6 +549,10 @@ footer{
 }
 
 @media (max-width: 821px){
+
+    .footer{
+        overflow-x: hidden;
+    }
 
     .superior-footer{
         display: block;
@@ -646,7 +653,7 @@ footer{
 
     #toggle-menu{
         position: absolute;
-        bottom: -1670px;
+        bottom: -1634px;
         right: 420px;
         background-color: white;
         width: 334px;
@@ -661,7 +668,7 @@ footer{
 
     #toggle-menu2{
         position: absolute;
-        bottom: -1668px;
+        bottom: -1634px;
         right: 47px;
         background-color: white;
         width: 334px;
@@ -727,6 +734,11 @@ footer{
 }
 
 @media (max-width: 391px){
+
+    .footer{
+        overflow-x: hidden;
+    }
+
     .mid-footer-big-links{
         height: 100px;
         width: 310px;
@@ -762,7 +774,7 @@ footer{
     #toggle-menu{
         position: absolute;
         right: 30px;
-        bottom: -3710px;
+        bottom: -3700px;
         background-color: white;
         width: 324px;
         height: 970px;
@@ -774,7 +786,7 @@ footer{
 
     #toggle-menu2{
         position: absolute;
-        bottom: -3800px;
+        bottom: -3792px;
         right: 30px;
         background-color: white;
         width: 324px;

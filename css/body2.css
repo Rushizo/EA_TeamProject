@@ -22,11 +22,11 @@
 .horizontal-rule{
     width: 100%;
     border-bottom: 1px solid lightgray;
-    padding-bottom: 25px;
+    padding-bottom: 5px;
 }
 
 .ultime-novità-container .ultime-novità .selection-bar{
-    width: 100vw;
+    width: 100%;
     height: 25px;
     height: fit-content;
 }
@@ -320,7 +320,10 @@
 }
 
 /* BUTTON */
-
+.button-container{
+    height: 100px;
+    margin-bottom: 30px;
+}
 .dettagli-button{
     margin-top: 40px;
     font-size: 18px;
@@ -336,11 +339,12 @@
 
 @media (max-width: 821px){
     .ultime-novità-container .card-container .card{
-        border: 1px solid lightgray;
         width: 48%;
-        height: 480px;
-        box-shadow: 2px 2px 7px 3px rgba(0, 0, 0, 0.3) ;
-        transition: 400ms ease-in-out 25ms;
-        overflow: hidden;
     }
+
+    .ultime-novità-container .ultime-novità .selection-bar button {
+        font-size: 16px;
+        padding: 7px ;
+    }
+
 }

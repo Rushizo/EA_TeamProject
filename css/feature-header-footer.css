@@ -2,9 +2,8 @@
 
 header{
     display: flex;
-    height: 55vh;
+    height: 400px;
     margin-top: 6rem;
-    overflow-x: hidden;
 }
 
 .right-header{
@@ -17,7 +16,7 @@ header{
 
 .right-header-image{
     width: 100%;
-    height: 55vh;
+    height: 400px;
 }
 
 .left-header{
@@ -334,12 +333,6 @@ footer{
     color: var(--secondary-color);
 }
 
-.inferior-footer{
-    display: flex;
-    margin-bottom: 3rem;
-    margin-top: 1.5rem;
-}
-
 .trust svg{
     width: 191px;
     height: 57px;
@@ -352,21 +345,29 @@ footer{
     line-height: 1.8;
 }
 
+.inferior-footer{
+    display: flex;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
 .inf-footer-title-container{
-    margin-left: 332px;
+    width: 660px;
 }
 
 .trust-div{
     margin-top: 20px;
-    width: 570px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    position: relative;
+    left: 137px;
 }
  
 #toggle-menu{
     position: absolute;
-    top: 196px;
+    bottom: -1260px;
     right: 380px;
     background-color: white;
     width: 590px;
@@ -448,7 +449,7 @@ footer{
 
 #toggle-menu2{
     position: absolute;
-    top: 176px;
+    bottom: -1260px;
     right: 170px;
     background-color: white;
     width: 530px;
@@ -621,6 +622,8 @@ footer{
         margin-left: 8%;
         display: flex;
         justify-content: flex-start;
+        position: relative;
+        left: 0px;
     }
 
     .country-button{
@@ -643,7 +646,7 @@ footer{
 
     #toggle-menu{
         position: absolute;
-        top: 55px;
+        bottom: -1670px;
         right: 420px;
         background-color: white;
         width: 334px;
@@ -658,7 +661,7 @@ footer{
 
     #toggle-menu2{
         position: absolute;
-        top: 55px;
+        bottom: -1668px;
         right: 47px;
         background-color: white;
         width: 334px;
@@ -758,8 +761,8 @@ footer{
 
     #toggle-menu{
         position: absolute;
-        top: 200px;
         right: 30px;
+        bottom: -3710px;
         background-color: white;
         width: 324px;
         height: 970px;
@@ -771,7 +774,7 @@ footer{
 
     #toggle-menu2{
         position: absolute;
-        top: 200px;
+        bottom: -3800px;
         right: 30px;
         background-color: white;
         width: 324px;

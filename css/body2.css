@@ -328,7 +328,7 @@
 .dettagli-button{
     margin-top: 40px;
     font-size: 18px;
-    background-color: white;
+    background-color: transparent;
     padding: 12px 20px 12px 20px;
     border: 2px solid var(--secondary-color);
     transition: 200ms ease-in-out 25ms;

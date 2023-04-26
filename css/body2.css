@@ -319,6 +319,14 @@
     box-shadow: 5px 10px 8px 5px rgba(0, 0, 0, 0.3) ;
     transition: ease-in-out 0.4s;
 }
+/* SMALL CARDS */
+
+.ultime-novità-container .small-container{
+    width: 100%;
+    border: 1px solid;
+    
+}
+
 
 /* BUTTON */
 .button-container{
@@ -354,4 +362,10 @@
         padding: 7px ;
     }
 
+}
+
+@media (max-width: 391px) {
+    .ultime-novità-container .card-container .card{
+        display: none;
+    }
 }

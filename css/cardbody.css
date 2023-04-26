@@ -28,7 +28,7 @@ body {
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
-    width: 65%;
+    width: 1100px;
     justify-content: center;
     align-items: center;
 }

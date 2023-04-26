@@ -324,9 +324,22 @@
 .ultime-novità-container .small-container{
     width: 100%;
     border: 1px solid;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;    
 }
 
+.ultime-novità-container .small-container .small-card{
+    width: 331px ;
+    height: 140px;
+    border: 1px solid lightgray;
+}
+
+.ultime-novità-container .small-container .small-card:hover{
+    margin-top: -10px;
+    box-shadow: 5px 10px 8px 5px rgba(0, 0, 0, 0.3) ;
+    transition: ease-in-out 0.4s;
+}
 
 /* BUTTON */
 .button-container{

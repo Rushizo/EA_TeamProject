@@ -28,3 +28,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+body{
+    background-color: var(--page-color);
+}
+

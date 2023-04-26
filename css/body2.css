@@ -42,7 +42,7 @@
     border: none;
     font-size: 18px ;
     border-left: 1px solid lightgray;
-    background-color: white;
+    background-color: var(--page-color);
     height: 50px;
     display: flex;
     justify-content: center;
@@ -54,10 +54,8 @@
     color: rgb(80, 80, 80)
 }
 
-.ultime-novità-container .ultime-novità .selection-bar #notizieEA:focus{
+.ultime-novità-container .ultime-novità .selection-bar span:focus{
     background-color: rgba(163, 162, 162, 0.3);
-    color: rgb(80, 80, 80);
-    border-bottom: 1px solid red;
 }
 
 /* CARD */

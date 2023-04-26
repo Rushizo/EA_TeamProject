@@ -1,0 +1,279 @@
+.blackTopNavbar {
+    background-color: #161616;
+    height: 40px;
+    width: 100%;
+}
+
+.bottomNavbar {
+    position: fixed;
+    background-color: white;
+    height: 56px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.blackTopNavbar ul {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin-right: 42px;
+    max-width: 1200px;
+}
+
+.bottomNavbar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+nav .blackTopNavbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .blackTopNavbar ul li {
+    position: relative;
+    float: left;
+    align-items: end;
+    margin-left: 30px;
+}
+
+
+ul ul {
+    display: none;
+    }
+    
+    ul.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    }
+    
+    ul.active li {
+    margin: 20px;
+    }
+
+nav .bottomNavbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding-left: 17px;
+}
+
+nav .bottomNavbar ul li {
+    position: relative;
+    float: left;
+    align-items: end;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 18px;
+
+}
+
+nav .bottomNavbar ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+nav .bottomNavbar ul li a:hover,
+.i:hover {
+    color: rgb(255, 187, 0);
+}
+
+nav .bottomNavbar ul li:hover ul {
+    display: block;
+}
+
+
+.popupMenu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .popupMenu ul {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: -10px;
+    background-color: #f9f9f9;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popupMenu ul li {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .popupMenu ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .popupMenu ul li img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .popupMenu.open ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    position: absolute;
+    height: 550px;
+    width: 500px;
+    overflow-y: scroll;
+}
+  
+  .dots {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    height: 24px;
+    width: 24px;
+  }
+  
+  .dots span {
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: #000000;
+    border-radius: 50%;
+    margin-bottom: 3px;
+  }
+  
+  .dots span:last-child {
+    margin-bottom: 0;
+  }
+  
+  .popupMenu .close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1;
+  }
+  
+  
+
+.dropdownGiochi,
+.otherSec {
+    padding: 10px;
+}
+
+.dropdownGiochi ul.esplora {
+    background-color: white;
+    left: 0;
+    top: 100%;
+    padding-left: 0;
+    padding-top: 25px;
+    padding-right: 25px;
+    border-left: black solid 1px;
+    border-bottom: black solid 1px;
+    border-top: black solid 1px;
+}
+
+.dropdownGiochi ul.piattaforme {
+    background-color: white;
+    left: 100%;
+    padding-right: 55px;
+    padding-top: 25px;
+    margin-left: 25px;
+    border-right: black solid 1px;
+    border-top: black solid 1px;
+}
+
+.otherSec ul {
+    background-color: white;
+    border: black solid 1px;
+    padding: 25px;
+}
+
+.dropdownGiochi ul.esplora li a {
+    font-size: 16px;
+    color: #949393;
+    left: 0;
+    top: 100%;
+    padding-top: 5px;
+}
+
+.dropdownGiochi ul.piattaforme li a {
+    font-size: 16px;
+    color: #949393;
+    left: 0;
+    top: 100%;
+    padding-top: 5px;
+}
+
+.bottomNavbar .otherSec ul li a {
+    font-size: 16px;
+    color: #949393;
+    left: 0;
+    top: 100%;
+    padding-top: 5px;
+}
+
+.dropdownGiochi ul.piattaforme li {
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.bottomNavbar ul li a .title {
+    color: black;
+}
+
+.otherSec ul li {
+    padding-bottom: 10px;
+}
+
+.arrowDown {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    margin-left: 5px;
+    margin-bottom: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.arrowDown:hover {
+    border: solid rgb(255, 187, 0);
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    transition: 0.4s;
+}

@@ -38,11 +38,11 @@
 }
 
 .ea-play .blue-rule .blue-rule-container{
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
-    padding: 0 20%;
     align-items: center;
+
 }
 
 .ea-play .blue-rule .blue-rule-container h2{

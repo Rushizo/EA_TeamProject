@@ -37,22 +37,24 @@ $notizieEa.addEventListener("click", () => {
 })
 
 $eaPlay.addEventListener("click", () => {
-    if($container2.style.display === "none"){
+    if(clicked){
         $container1.style.display = "none";
         $container2.style.display = "block";
+        
         $container3.style.display = "none";
         $container4.style.display = "none";
         $container5.style.display = "none";
         $container6.style.display = "none";
         $container7.style.display = "none";
         $container8.style.display = "none";
+
     } else {
         
     }
 })
 
 $fifa.addEventListener("click", () => {
-    if($container3.style.display === "none"){
+    if(clicked){
         $container1.style.display = "none";
         $container2.style.display = "none";
         $container3.style.display = "block";
@@ -68,7 +70,7 @@ $fifa.addEventListener("click", () => {
 
 
 $f1.addEventListener("click", () => {
-    if($container4.style.display === "none"){
+    if(clicked){
         $container1.style.display = "none";
         $container2.style.display = "none";
         $container3.style.display = "none";
@@ -83,7 +85,7 @@ $f1.addEventListener("click", () => {
 })
 
 $apex.addEventListener("click", () => {
-    if($container5.style.display === "none"){
+    if(clicked){
         $container1.style.display = "none";
         $container2.style.display = "none";
         $container3.style.display = "none";
@@ -99,7 +101,7 @@ $apex.addEventListener("click", () => {
 
 
 $theSims.addEventListener("click", () => {
-    if($container6.style.display === "none"){
+    if(clicked){
         $container1.style.display = "none";
         $container2.style.display = "none";
         $container3.style.display = "none";
@@ -114,7 +116,7 @@ $theSims.addEventListener("click", () => {
 })
 
 $battlefild.addEventListener("click", () => {
-    if($container7.style.display === "none"){
+    if(clicked){
         $container1.style.display = "none";
         $container2.style.display = "none";
         $container3.style.display = "none";
@@ -129,7 +131,7 @@ $battlefild.addEventListener("click", () => {
 })
 
 $insideEa.addEventListener("click", () => {
-    if($container8.style.display === "none"){
+    if(clicked){
         $container1.style.display = "none";
         $container2.style.display = "none";
         $container3.style.display = "none";

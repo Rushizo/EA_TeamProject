@@ -1,11 +1,11 @@
-const $notizieEa = document.querySelector("#notizieEA");
-const $eaPlay = document.querySelector("#EA-play");
-const $fifa = document.querySelector("#fifa");
-const $f1 = document.querySelector("#F1");
-const $apex = document.querySelector("#apex");
-const $theSims = document.querySelector("#the-sims");
-const $battlefield = document.querySelector("#battlefield");
-const $insideEa = document.querySelector("#inside-EA");
+const $notizieEa = document.querySelector(".notizieEA");
+const $eaPlay = document.querySelector(".EA-play");
+const $fifa = document.querySelector(".fifa");
+const $f1 = document.querySelector(".F1");
+const $apex = document.querySelector(".apex");
+const $theSims = document.querySelector(".the-sims");
+const $battlefield = document.querySelector(".battlefield");
+const $insideEa = document.querySelector(".inside-EA");
 
 const $container1 = document.querySelector(".container1");
 const $container2 = document.querySelector(".container2");
@@ -15,6 +15,10 @@ const $container5 = document.querySelector(".container5");
 const $container6 = document.querySelector(".container6");
 const $container7 = document.querySelector(".container7");
 const $container8 = document.querySelector(".container8");
+
+const $moveRight = document.querySelector(".move-right");
+const $moveLeft = document.querySelector(".move-left")
+const $scrollBar = document.querySelector(".selection-bar")
 
 
 let clicked = true;
@@ -272,8 +276,14 @@ $insideEa.addEventListener("click", () => {
 })
 
 
+$moveRight.addEventListener("click", () =>{
+    $scrollBar.scrollBy(200,0)
+})
 
 
+$moveLeft.addEventListener("click", () =>{
+    $scrollBar.scrollBy(-200,0)
+})
 
 
 

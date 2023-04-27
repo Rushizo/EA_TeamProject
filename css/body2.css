@@ -27,37 +27,80 @@
     padding-bottom: 5px;
 }
 
+.ultime-novità-container .ultime-novità .selection-bar-container{
+    position: relative;
+    width: 100vw;
+}
+
 .ultime-novità-container .ultime-novità .selection-bar{
     width: 100%;
     height: fit-content;
     overflow: auto;
-    position: relative;
     display: flex;
+    transition: 200ms ease-in-out 200ms;
+
 }
 
 
 
+.ultime-novità-container .last-news-inner-container{
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .ultime-novità-container .ultime-novità .selection-bar span{
-    width: 120px;
-    border: none;
+    width: 130px;
     font-size: 18px ;
-    border-left: 1px solid lightgray;
-    background-color: var(--page-color);
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
- 
+
+.ultime-novità-container .ultime-novità .selection-bar .EA-play, .fifa, .F1, .apex, .the-sims, .battlefield, .inside-EA{
+    border-left: 2px solid lightgray;
+}
+
+.ultime-novità-container .ultime-novità .selection-bar::-webkit-scrollbar{
+    display: none;
+   
+}
+
 .ultime-novità-container .ultime-novità .selection-bar span:hover{
     background-color: rgba(163, 162, 162, 0.3);
     color: rgb(80, 80, 80)
 }
 
-.ultime-novità-container .ultime-novità .selection-bar span:focus{
-    background-color: rgba(163, 162, 162, 0.3);
+.ultime-novità-container .ultime-novità .selection-bar-container .move-button{
+    position: absolute;
+    height: 100%;;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    cursor: pointer;
+    display: none;
 }
 
+.ultime-novità-container .ultime-novità .selection-bar-container .move-button svg{
+    fill: gray;
+}
+
+.ultime-novità-container .ultime-novità .selection-bar-container .move-left{
+    left: 10px;
+    transform: rotate(0.25turn);
+}
+
+.ultime-novità-container .ultime-novità .selection-bar-container .move-right{
+    top: 0;
+    right: 10px;
+    transform: rotate(-0.25turn);
+}
 /* CARD */
 
 .ultime-novità-container .card-container{
@@ -70,14 +113,6 @@
     align-items: center;
     justify-content: center;
     
-}
-
-.ultime-novità-container .last-news-inner-container{
-    max-width: 1100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .container2, .container3, .container4, .container5, .container6, .container7, .container8{
@@ -407,16 +442,28 @@
 
     .ultime-novità-container .ultime-novità .selection-bar{
         display: flex;
-        overflow: hidden;
-
+        overflow: auto;
+        position: relative;
+        margin: 0 50px;
     }
+
+    .ultime-novità-container .ultime-novità {
+       width: 100%;
+    }
+
+   
 
     .ultime-novità-container .last-news-inner-container{
         width: 100%;
     }
 
+    .ultime-novità-container .ultime-novità .selection-bar-container .move-button{
+        display: block;
+    }
 
-
+    .container1, .container2, .container3, .container4, .container5, .container6, .container7, .container8{
+        padding: 0 25px;
+    }
 }
 
 @media (max-width: 391px) {

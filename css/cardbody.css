@@ -5,12 +5,14 @@ body {
 }
 
 .card-game-in-evidency {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 40px;
 }
 
 .card-game-in-evidency .h2-title {

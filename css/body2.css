@@ -414,11 +414,14 @@
 
 /* BUTTON */
 .button-container{
-    height: 100px;
-    margin-bottom: 30px;
+    height: 60px;
 }
-.dettagli-button{
-    margin-top: 40px;
+
+.container-dettagli-button{
+    margin-bottom: 40px;
+}
+
+.button{
     font-size: 18px;
     background-color: transparent;
     padding: 12px 20px 12px 20px;
@@ -426,7 +429,11 @@
     transition: 200ms ease-in-out 25ms;
 }
 
-.dettagli-button:hover{
+.dettagli-button{
+    margin-top: 40px;
+}
+
+.button:hover{
     padding: 16px 24px 16px 24px;
 }
 

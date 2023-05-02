@@ -4,6 +4,7 @@
     width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
+    z-index: -1;
 }
 
 .ea-play .ea-play-container{

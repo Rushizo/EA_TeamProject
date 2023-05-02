@@ -57,3 +57,4 @@ titles.forEach(title => {
     menu.classList.toggle('active');
   });
 });
+

@@ -4,7 +4,7 @@
 header{
     display: flex;
     height: 400px;
-    margin-top: 56px;
+    margin-top: 96px;
     overflow-x: hidden;
 }
 
@@ -654,7 +654,7 @@ footer{
 
     #toggle-menu{
         position: absolute;
-        bottom: -3166px;
+        bottom: -4360px;
         right: 420px;
         background-color: white;
         width: 334px;
@@ -669,7 +669,7 @@ footer{
 
     #toggle-menu2{
         position: absolute;
-        bottom: -3166px;
+        bottom: -4360px;
         right: 47px;
         background-color: white;
         width: 334px;
@@ -775,7 +775,7 @@ footer{
     #toggle-menu{
         position: absolute;
         right: 30px;
-        bottom: -3195px;
+        bottom: -5455px;
         background-color: white;
         width: 324px;
         height: 970px;
@@ -787,7 +787,7 @@ footer{
 
     #toggle-menu2{
         position: absolute;
-        bottom: -3287px;
+        bottom: -5546px;
         right: 30px;
         background-color: white;
         width: 324px;

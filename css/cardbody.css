@@ -41,8 +41,9 @@ body {
     align-items: center;
     width: 20rem;
     height: 20rem;
-    position: relative;
+    position: relative;;
 }
+
 
 .card-game-in-evidency .last-games {
     background-color: white;
@@ -117,16 +118,53 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
     position: absolute;
     z-index: 1;
+    flex-direction: column;
 }
 
 .card-game-in-evidency .card-box .card .logo-box img {
+    width: 35%;
+}
+
+.card-game-in-evidency .card-box .card .logo-box #PGA-Tour-l, #TS4-l, #NFS-Unbound-l {
     width: 50%;
+}
+
+.card-game-in-evidency .card-box .card p {
+    display: none;
+    color: rgba(255, 255, 255, 0.713);
+    z-index: 2;
+    position: absolute;
+    bottom: 40%
+
 }
 
 
 
-.card-game-in-evidency .card-box .card:hover .logo-box {
-   color: linear-gradient(45deg, blue, red);
+.card-game-in-evidency .card-box .card .logo-box:hover {
+    background: linear-gradient(50deg, rgba(52, 52, 224, 0.70), rgba(199, 71, 71, 0.70));
+}
+
+.card-game-in-evidency .card-box .card:hover p {
+    display: block;
+}
+
+.card-game-in-evidency .card-box .card .logo-box:hover img {
+    transform: translate(0, -70%);
+}
+
+
+
+@media (max-width: 1024px) {
+    .card-game-in-evidency .card-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 821px) {
+    .card-game-in-evidency .card-box {
+        width: 100%;
+    }
 }

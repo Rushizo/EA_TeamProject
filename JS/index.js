@@ -34,3 +34,26 @@ event.preventDefault();
 toggleButton(this);
 toggleList(this);
 });
+
+
+const menuIcon = document.querySelector('.menuIcon');
+const menuList = document.querySelector('.newMenuList');
+
+
+menuIcon.addEventListener('click', function() {
+  menuList.classList.toggle('open');
+});
+
+const titles = document.querySelectorAll('.title');
+
+titles.forEach(title => {
+  title.addEventListener('click', () => {
+    const menu = title.nextElementSibling;
+    titles.forEach(t => {
+      if (t !== title) {
+        t.nextElementSibling.classList.remove('active');
+      }
+    });
+    menu.classList.toggle('active');
+  });
+});

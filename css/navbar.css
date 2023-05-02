@@ -3,8 +3,23 @@
     height: 40px;
     width: 100%;
 }
+        .blackTopNavbar {
+            top: 0;
+            width: 100%;
+            z-index: 99;
+        }
 
-.bottomNavbar {
+        .bottomNavbar {
+            display: none;
+            position: fixed;
+            width: 100%;
+            z-index: 99;
+        }
+
+        .showBottomNavbar {
+            display: block;
+            top: 0;
+    }.bottomNavbar {
     position: fixed;
     background-color: white;
     height: 56px;
@@ -62,7 +77,7 @@ ul ul {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(16 16 16);
     z-index: 9999;
     }
     
@@ -203,9 +218,11 @@ nav .bottomNavbar ul li:hover ul {
     left: 100%;
     padding-right: 55px;
     padding-top: 25px;
+    padding-bottom: 87px;
     margin-left: 25px;
     border-right: black solid 1px;
     border-top: black solid 1px;
+    border-bottom: black solid 1px;
 }
 
 .otherSec ul {
@@ -277,3 +294,124 @@ nav .bottomNavbar ul li:hover ul {
     -webkit-transform: rotate(225deg);
     transition: 0.4s;
 }
+
+.newMenu{
+    display: none;
+}
+
+@media screen and (max-width: 820px) {
+    
+    .newMenu{
+        display: block;
+      }
+      .dots{
+        display: none;
+      }
+      
+      .dropdownGiochi,
+      .otherSec {
+        display: none;
+      }
+      
+      .logo {
+        margin-left: 10px;
+        margin-right: auto;
+      }
+      
+      .bottomNavbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .menuIcon {
+        cursor: pointer;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url('../assets/hamburgerMenu.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: transparent;
+      }
+      
+      .title{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+
+      .newMenuList{
+        position: fixed;
+        top: 60px;
+        right: -200px;
+        width: 200px;
+        height: 100%;
+        background-color: #fff;
+        z-index: 999;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .newMenuList.open {
+        top: 100px;
+        left: 0;
+        background-color: white;
+        transition: 0.5ms;
+      }
+      
+      .newMenuList ul.open {
+        display: block;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .newMenuList.open ul li {
+        display: block;
+        padding: 12px 20px;
+        border-bottom: 1px solid #b62020;
+      }
+      
+      .newMenuList.open ul li:last-child {
+        border-bottom: none;
+      }
+      
+      .newMenuList.open .dropdownGiochi,
+      .newMenuList.open .otherSec {
+        display: block;
+      }
+      
+      .newMenuList.open .dropdownGiochi ul,
+      .newMenuList.open .otherSec ul {
+        display: block;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .newMenuList.open .dropdownGiochi li,
+      .newMenuList.open .otherSec li {
+        display: block;
+        padding: 12px 20px;
+        border-bottom: 1px solid #b62020;
+      }
+      
+      .newMenuList.open .dropdownGiochi li:last-child,
+      .newMenuList.open .otherSec li:last-child {
+        border-bottom: none;
+      }
+      
+      .menuIcon:focus + .menu,
+      .menuIcon:hover + .menu{
+        right: 0;
+      }
+.esplora,
+.piattaforme,
+.otherSec ul.active {
+  display: block;
+}
+
+       
+    }
+
+
+    

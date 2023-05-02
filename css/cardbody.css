@@ -49,12 +49,6 @@ body {
     border-radius: 5px;
     font-size: 15px;
 }
-.card-game-in-evidency .card-box .card .logo-game {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
 
 .card-game-in-evidency .card-box .card #Star-wars-i {
     background-image: url('https://media.contentapi.ea.com/content/dam/gin/images/2022/06/star-wars-jedi-survivor-keyart.jpg.adapt.crop1x1.767p.jpg');
@@ -115,7 +109,22 @@ body {
     z-index: -1;
 }
 
+.card-game-in-evidency .card-box .card .logo-box {
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
 
-.card-game-in-evidency .card-box .card:hover .logo-game {
-    background-color: linear-gradient(45deg, blue, red);
+.card-game-in-evidency .card-box .card .logo-box img {
+    width: 50%;
+}
+
+
+
+.card-game-in-evidency .card-box .card:hover .logo-box {
+   color: linear-gradient(45deg, blue, red);
 }

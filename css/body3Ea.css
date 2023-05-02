@@ -89,4 +89,18 @@
         width: 85%;
     }
 
+   
+    
+}
+
+@media (max-width: 391px){
+    .ea-play .ea-play-container{
+        height: 649px ;
+        background-image: url(https://media.contentapi.ea.com/content/dam/eacom/subscription/ea-play-platform-landing-page/images/2021/01/hero-medium-console-7x2-xl.jpg.adapt.crop3x5.767w.jpg);
+    }
+
+    .ea-play .blue-rule .blue-rule-container h2{
+        width: 340px;
+        font-weight: 600;
+    }
 }

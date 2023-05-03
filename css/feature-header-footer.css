@@ -4,7 +4,6 @@
 header{
     display: flex;
     height: 400px;
-    margin-top: 96px;
     overflow-x: hidden;
 }
 

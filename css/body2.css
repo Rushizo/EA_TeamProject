@@ -458,8 +458,6 @@
        width: 100%;
     }
 
-   
-
     .ultime-novità-container .last-news-inner-container{
         width: 100%;
     }
@@ -486,11 +484,11 @@
         display: block;
     }
 
-    .button-container .media-button{
+    .button-container .button{
         width: 331px;
     }
 
-    .button-container .media-button:hover{
+    .button-container .button:hover{
         width: 340px;
     }
 

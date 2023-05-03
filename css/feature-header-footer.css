@@ -4,7 +4,7 @@
 header{
     display: flex;
     height: 400px;
-    margin-top: 56px;
+    margin-top: 96px;
     overflow-x: hidden;
 }
 
@@ -285,7 +285,7 @@ footer{
     margin-right: 40px;
     border-color: rgb(200,200,200);
     border-radius: 4px;
-    background-color: var(--primary-color);
+    background-color: transparent;
 }
 
 .country-title{
@@ -303,7 +303,7 @@ footer{
     height: 60px;
     border-color: rgb(200,200,200);
     border-radius: 4px;
-    background-color: var(--primary-color);
+    background-color: transparent;
 }
 
 .language-title{
@@ -326,6 +326,7 @@ footer{
 .mid-footer-location{
     margin-top: 20px;
     margin-left: 180px;
+    display: flex;
 }
 
 .mid-footer-small-links{
@@ -371,21 +372,23 @@ footer{
  
 #toggle-menu{
     position: absolute;
-    bottom: -2605px;
-    right: 380px;
     background-color: white;
+    right: 15px;
+    top: -555px;
     width: 590px;
     height: 550px;
     visibility: hidden;
     display: flex;
     border: solid rgb(200,200,200);
     box-shadow: 0px -1px 30px -2px rgba(0,0,0,0.75);
+    z-index: 1;
 }
 
 .state a{
     text-decoration: none;
     color: var(--secondary-color);
     font-size: 15px;
+
 }
 
 .first-column{
@@ -453,8 +456,8 @@ footer{
 
 #toggle-menu2{
     position: absolute;
-    bottom: -2605px;
-    right: 170px;
+    top: -570px;
+    right: 0px;
     background-color: white;
     width: 530px;
     height: 570px;
@@ -511,6 +514,7 @@ footer{
 
 .line-language a:hover{
     padding-left: 10px;
+    transition: 200ms ease-in-out ;
 }
 
 .mini-links-sup a:hover{
@@ -547,6 +551,12 @@ footer{
 
 .state a:hover{
     margin-left: 10px;
+    transition: 200ms ease-in-out ;
+}
+
+.country-button-container{
+    position: relative;
+    z-index: 1;
 }
 
 @media (max-width: 821px){
@@ -654,8 +664,8 @@ footer{
 
     #toggle-menu{
         position: absolute;
-        bottom: -3166px;
-        right: 420px;
+        top: -970px;
+        left: 0;
         background-color: white;
         width: 334px;
         height: 970px;
@@ -669,8 +679,8 @@ footer{
 
     #toggle-menu2{
         position: absolute;
-        bottom: -3166px;
-        right: 47px;
+        top: -970px;
+        left: 0;
         background-color: white;
         width: 334px;
         height: 970px;
@@ -720,6 +730,7 @@ footer{
 
     .x-state, .asian-states{
         margin-left: 5px;
+
     }
 
     .check1, .check2{
@@ -738,6 +749,10 @@ footer{
 
     .footer{
         overflow-x: hidden;
+    }
+
+    .mid-footer-location{
+       flex-direction: column;
     }
 
     .mid-footer-big-links{
@@ -773,9 +788,8 @@ footer{
     }
 
     #toggle-menu{
-        position: absolute;
-        right: 30px;
-        bottom: -3195px;
+        top: -970px;
+        right: 0;
         background-color: white;
         width: 324px;
         height: 970px;
@@ -787,8 +801,8 @@ footer{
 
     #toggle-menu2{
         position: absolute;
-        bottom: -3287px;
-        right: 30px;
+        top: -1060px;
+        right: 0;
         background-color: white;
         width: 324px;
         height: 1060px;

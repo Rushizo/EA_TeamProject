@@ -229,6 +229,7 @@ nav .bottomNavbar ul li:hover ul {
     background-color: white;
     border: black solid 1px;
     padding: 25px;
+    
 }
 
 .dropdownGiochi ul.esplora li a {
@@ -307,9 +308,7 @@ nav .bottomNavbar ul li:hover ul {
       .dots{
         display: none;
       }
-      .bottomNavbar {
-        display: none;
-      }
+      
       .dropdownGiochi,
       .otherSec {
         display: none;
@@ -325,6 +324,17 @@ nav .bottomNavbar ul li:hover ul {
         justify-content: space-between;
         align-items: center;
       }
+
+      .mobileBottomNavbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 10px;
+        z-index: 9999;
+      }
+      
       
       .menuIcon {
         cursor: pointer;
@@ -340,6 +350,11 @@ nav .bottomNavbar ul li:hover ul {
       .title{
         text-decoration: none;
         color: rgb(0, 0, 0);
+      }
+
+      .newMenuList ul li a {
+          text-decoration: none;
+          color: rgb(165, 165, 165);
       }
 
       .newMenuList{
@@ -394,7 +409,7 @@ nav .bottomNavbar ul li:hover ul {
       .newMenuList.open .otherSec li {
         display: block;
         padding: 12px 20px;
-        border-bottom: 1px solid #b62020;
+        border-bottom: 1px solid black;
       }
       
       .newMenuList.open .dropdownGiochi li:last-child,
@@ -410,6 +425,9 @@ nav .bottomNavbar ul li:hover ul {
 .piattaforme,
 .otherSec ul.active {
   display: block;
+  top: 100px;
+  width: 50%;
+  height: 50%;
 }
 
        

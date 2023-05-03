@@ -1,441 +1,223 @@
 @import url(./root.css);
 
-.blackTopNavbar {
-  background-color: #161616;
+.black-navbar{
   height: 40px;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: black;
+  gap: 1rem;
+  padding: 0 18px;
 }
-      .blackTopNavbar {
-          top: 0;
-          width: 100%;
-          z-index: 99;
-      }
 
-      .bottomNavbar {
-          display: none;
-          position: fixed;
-          width: 100%;
-          z-index: 99;
-      }
+.black-navbar .logos-container{
+  height: 18px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-      .showBottomNavbar {
-          display: block;
-          top: 0;
-  }.bottomNavbar {
+.black-navbar .logos-container a{
+  height: 100%;
+}
+
+.black-navbar .logos-container svg{
+  height: 95%;
+  fill: rgb(197, 197, 197);
+}
+
+.black-navbar .logos-container:nth-child(3){
+  height: 30px;
+  fill: rgb(39, 38, 38);
+}
+
+.black-navbar .logos-container:nth-child(3) svg{
+  height: 30px;
+  fill: rgb(128, 123, 123);
+}
+
+.black-navbar .logos-container:hover svg{
+  fill: white;
+}
+
+.black-navbar .logos-container:nth-child(3):hover svg{
+  fill: rgb(168, 168, 168);
+}
+
+.white-navbar{
+  height: 56px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   position: fixed;
   background-color: white;
-  height: 56px;
-  left: 0;
   width: 100%;
-  z-index: 9999;
+
 }
 
-.blackTopNavbar ul {
-  list-style: none;
-  text-decoration: none;
-  padding: 0;
-  margin-right: 42px;
-  max-width: 1200px;
+.white-navbar .three-point-container{
+  height: 20px;
+  width: 50px ;
+  transition: 200ms ease-in-out;
 }
 
-.bottomNavbar ul {
-  list-style: none;
-  padding: 0;
-  width: 100%;
-  max-width: 1200px;
+.white-navbar .three-point-container svg{
+  transform: rotate(-90deg);
 }
 
-nav ul ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  width: 100%;
+.white-navbar .three-point-container:hover{
+  height: 25px;
+  width: 50px ;
+  fill: var(--cards-titles-color);
 }
 
-nav .blackTopNavbar {
+.white-navbar .white-navbar-content{
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
+  height: 100%;
 }
 
-nav .blackTopNavbar ul li {
-  position: relative;
-  float: left;
-  align-items: end;
-  margin-left: 30px;
+.white-navbar .main-logo-container{
+  margin: 0 20px;
 }
 
+.white-navbar .navbar-explore{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 25px;
+  height: 100%;
+}
 
-ul ul {
-  display: none;
-  }
-  
-  ul.active {
+.white-navbar .navbar-explore .explore-content{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
+  margin: 0 10px;
+  position: relative;
   height: 100%;
-  width: 100%;
-  background-color: rgb(16 16 16);
-  z-index: 9999;
-  }
-  
-  ul.active li {
-  margin: 20px;
-  }
+}
 
-nav .bottomNavbar {
+.white-navbar .navbar-explore .explore-content .arrow{
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  padding-left: 17px;
-}
-
-nav .bottomNavbar ul li {
-  position: relative;
-  float: left;
-  align-items: end;
-  padding-left: 25px;
-  padding-right: 25px;
-  font-size: 18px;
-
-}
-
-nav .bottomNavbar ul li a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
-nav .bottomNavbar ul li a:hover,
-.i:hover {
-  color: rgb(255, 187, 0);
-}
-
-nav .bottomNavbar ul li:hover ul {
-  display: block;
-}
-
-
-.popupMenu {
-  position: relative;
-  display: inline-block;
-}
-
-.popupMenu ul {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  top: 30px;
-  left: -10px;
-  background-color: #f9f9f9;
-  padding: 8px;
-  border-radius: 4px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-.popupMenu ul li {
-  display: block;
-  margin-bottom: 8px;
-}
-
-.popupMenu ul li a {
-  color: #000000;
-  text-decoration: none;
-}
-
-.popupMenu ul li img {
-  max-width: 100%;
-  height: auto;
-}
-
-.popupMenu.open ul {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: white;
-  position: absolute;
-  height: 550px;
-  width: 500px;
-  overflow-y: scroll;
-}
-
-.dots {
-  cursor: pointer;
-  border: none;
-  background: transparent;
-  padding: 0;
+  font-size: 8px;
+  width: 10px;
   margin: 0;
-  height: 24px;
-  width: 24px;
+  padding-left: 5px;
+  gap: 1.97px;
 }
 
-.dots span {
-  display: block;
-  width: 5px;
-  height: 5px;
-  background: #000000;
-  border-radius: 50%;
-  margin-bottom: 3px;
+.white-navbar .navbar-explore .explore-content .arrow span:first-child{
+  transform: rotate(-40deg);
+  transition: 200ms ease-in-out;
 }
 
-.dots span:last-child {
-  margin-bottom: 0;
+.white-navbar .navbar-explore .explore-content .arrow span:last-child{
+  transform: rotate(40deg);
+  transition: 200ms ease-in-out;
 }
 
-.popupMenu .close {
+.white-navbar .navbar-explore .explore-content:hover .pop-up-button,
+.white-navbar .navbar-explore .explore-content:hover .arrow{
+  color: var(--cards-titles-color);
+}
+
+.white-navbar .navbar-explore .explore-content:hover .arrow span:first-child{
+  transform: rotate(-140deg);
+}
+
+.white-navbar .navbar-explore .explore-content:hover .arrow span:last-child{
+  transform: rotate(140deg);
+}
+
+/* Pop-Up Menù*/
+.navbar-explore .explore-content .pop-up-menù-info{
   position: absolute;
-  top: 8px;
-  right: 8px;
-  cursor: pointer;
-  font-size: 24px;
-  font-weight: bold;
-  color: #000000;
-  line-height: 1;
-}
-
-
-
-.dropdownGiochi,
-.otherSec {
-  padding: 10px;
-}
-
-.dropdownGiochi ul.esplora {
-  background-color: white;
-  left: 0;
-  top: 100%;
-  padding-left: 0;
-  padding-top: 25px;
-  padding-right: 25px;
-  border-left: black solid 1px;
-  border-bottom: black solid 1px;
-  border-top: black solid 1px;
-}
-
-.dropdownGiochi ul.piattaforme {
-  background-color: white;
-  left: 100%;
-  padding-right: 55px;
-  padding-top: 25px;
-  padding-bottom: 87px;
-  margin-left: 25px;
-  border-right: black solid 1px;
-  border-top: black solid 1px;
-  border-bottom: black solid 1px;
-}
-
-.otherSec ul {
-  background-color: white;
-  border: black solid 1px;
-  padding: 25px;
-  
-}
-
-.dropdownGiochi ul.esplora li a {
-  font-size: 16px;
-  color: #949393;
-  left: 0;
-  top: 100%;
-  padding-top: 5px;
-}
-
-.dropdownGiochi ul.piattaforme li a {
-  font-size: 16px;
-  color: #949393;
-  left: 0;
-  top: 100%;
-  padding-top: 5px;
-}
-
-.bottomNavbar .otherSec ul li a {
-  font-size: 16px;
-  color: #949393;
-  left: 0;
-  top: 100%;
-  padding-top: 5px;
-}
-
-.dropdownGiochi ul.piattaforme li {
-  font-size: 16px;
-  padding-top: 15px;
-}
-
-.title {
-  font-size: 18px;
-}
-
-.bottomNavbar ul li a .title {
-  color: black;
-}
-
-.otherSec ul li {
-  padding-bottom: 10px;
-}
-
-.arrowDown {
-  border: solid black;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 4px;
-  margin-left: 5px;
-  margin-bottom: 4px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
-.arrowDown:hover {
-  border: solid rgb(255, 187, 0);
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 4px;
-  margin-left: 5px;
-  margin-bottom: 1px;
-  transform: rotate(225deg);
-  -webkit-transform: rotate(225deg);
-  transition: 0.4s;
-}
-
-.newMenu{
   display: none;
+  border: 1px solid;
+  left: -45px;
+  background-color: rgba(243, 242, 242, 0.9);
+  padding: 35px 25px;
+  border-radius: 5px;
+  gap: 2rem;
+  width: fit-content;
+  transition: 200ms ease-in-out; 
+  overflow: hidden;
+
 }
 
-@media screen and (max-width: 820px) {
-  
-  .newMenu{
-      display: block;
-    }
-    .dots{
-      display: none;
-    }
-    
-    .dropdownGiochi,
-    .otherSec {
-      display: none;
-    }
-    
-    .logo {
-      margin-left: 10px;
-      margin-right: auto;
-    }
-    
-    .bottomNavbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+.navbar-explore .explore-content .giochi-menù{
+  bottom: -360px;
 
-    .mobileBottomNavbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #fff;
-      padding: 10px;
-      z-index: 9999;
-    }
-    
-    
-    .menuIcon {
-      cursor: pointer;
-      display: block;
-      width: 30px;
-      height: 30px;
-      background-image: url('../assets/hamburgerMenu.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: transparent;
-    }
-    
-    .title{
-      text-decoration: none;
-      color: rgb(0, 0, 0);
-    }
-
-    .newMenuList ul li a {
-        text-decoration: none;
-        color: rgb(165, 165, 165);
-    }
-
-    .newMenuList{
-      position: fixed;
-      top: 60px;
-      right: -200px;
-      width: 200px;
-      height: 100%;
-      background-color: #fff;
-      z-index: 999;
-      transition: all 0.3s ease-in-out;
-    }
-    
-    .newMenuList.open {
-      top: 100px;
-      left: 0;
-      background-color: white;
-      transition: 0.5ms;
-    }
-    
-    .newMenuList ul.open {
-      display: block;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    
-    .newMenuList.open ul li {
-      display: block;
-      padding: 12px 20px;
-      border-bottom: 1px solid #b62020;
-    }
-    
-    .newMenuList.open ul li:last-child {
-      border-bottom: none;
-    }
-    
-    .newMenuList.open .dropdownGiochi,
-    .newMenuList.open .otherSec {
-      display: block;
-    }
-    
-    .newMenuList.open .dropdownGiochi ul,
-    .newMenuList.open .otherSec ul {
-      display: block;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    
-    .newMenuList.open .dropdownGiochi li,
-    .newMenuList.open .otherSec li {
-      display: block;
-      padding: 12px 20px;
-      border-bottom: 1px solid black;
-    }
-    
-    .newMenuList.open .dropdownGiochi li:last-child,
-    .newMenuList.open .otherSec li:last-child {
-      border-bottom: none;
-    }
-    
-    .menuIcon:focus + .menu,
-    .menuIcon:hover + .menu{
-      right: 0;
-    }
-.esplora,
-.piattaforme,
-.otherSec ul.active {
-display: block;
-top: 100px;
-width: 50%;
-height: 50%;
 }
 
-     
-  }
+.navbar-explore .explore-content .altre-esperienze-menu{
+  bottom: -254px;
+}
+
+.navbar-explore .explore-content .informazioni-menu{
+  bottom: -325px;
+}
+
+.navbar-explore .explore-content .impegni-menu{
+  bottom: -290px;
+}
+
+.navbar-explore .explore-content .risorse-menu{
+  bottom: -290px;
+}
+
+.navbar-explore .explore-content .pop-up-menù-info .esplora{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.navbar-explore .explore-content .pop-up-menù-info .esplora-giochi{
+  width: 150px;
+}
+
+.navbar-explore .explore-content .pop-up-menù-info .esplora-altre-esperienze{
+  width: 200px;
+}
+
+.navbar-explore .explore-content .pop-up-menù-info .esplora-informazioni{
+  width: 150px;
+}
+
+.navbar-explore .explore-content .pop-up-menù-info .esplora-impegni{
+  width: 150px;
+}
+
+.navbar-explore .explore-content .pop-up-menù-info .esplora-risorse{
+  width: 100px;
+}
 
 
+.navbar-explore .explore-content .pop-up-menù-info .esplora #span-title{
+  font-size: 17px;
+  border-bottom: 1px solid rgb(167, 165, 165) ;
+  font-weight: bold;
+  color: rgb(27, 27, 27);
+  width: fit-content;
+  padding-bottom: 5px;
+}
+
+.navbar-explore .explore-content .pop-up-menù-info .esplora a{
+  font-size: 15px;
+  color: rgb(97, 97, 97);
+}
+
+.navbar-explore .explore-content .pop-up-menù-info .esplora a:hover{
+  color: var(--cards-titles-color);
+}
+
+.navbar-explore .giochi:hover .giochi-menù{
+  display: flex;
+}
 
 
-    

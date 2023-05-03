@@ -1,72 +1,70 @@
-const popupMenu = document.querySelector(".popupMenu");
-const dotsButton = document.querySelector(".dots");
 
-dotsButton.addEventListener("click", () => {
-  popupMenu.classList.toggle("open");
-});
+const blackNavbar = document.querySelector('.black-navbar');
+const whiteNavbar = document.querySelector('.white-navbar');
+const navbar = document.querySelector('nav')
 
-const closeButton = document.querySelector(".close");
-
-closeButton.addEventListener("click", () => {
-  popupMenu.classList.remove("open");
-});
-
-var profileBtn = document.getElementById('profileBtn');
-var helpBtn = document.getElementById('helpBtn');
-
-function toggleButton(button) {
-button.classList.toggle('active');
-}
-
-function toggleList(button) {
-var list = button.querySelector('ul');
-list.classList.toggle('active');
-}
-
-profileBtn.addEventListener('click', function(event) {
-event.preventDefault();
-toggleButton(this);
-toggleList(this);
-});
-
-helpBtn.addEventListener('click', function(event) {
-event.preventDefault();
-toggleButton(this);
-toggleList(this);
-});
-const blackTopNavbar = document.querySelector('.blackTopNavbar');
-const bottomNavbar = document.querySelector('.bottomNavbar');
-const mobileBottomNavbar = document.querySelector('.mobileBottomNavbar');
-
-window.addEventListener('scroll', function() {
-
-  if (window.pageYOffset > blackTopNavbar.offsetHeight) {
-    blackTopNavbar.style.display = 'none';
+const ScrollBar = () => {
+  if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+    whiteNavbar.style.top = "-40px";
   } else {
-    blackTopNavbar.style.display = 'flex';
+    whiteNavbar.style.top = "0px";
   }
-});
+}
+
+
+const $giochi = document.querySelector('.giochi')
+const $altreEsperienze = document.querySelector('.altre-esperienze')
+const $informazioni = document.querySelector('.informazioni')
+const $impegni = document.querySelector('.impegni')
+const $risorse = document.querySelector('.risorse')
+
+const $giochiMenù = document.querySelector('.giochi-menù')
+const $altreEsperienzeMenù = document.querySelector('.altre-esperienze-menu')
+const $informazioniMenù = document.querySelector('.informazioni-menu')
+const $impegniMenù = document.querySelector('.impegni-menu')
+const $risorseMenù = document.querySelector('.risorse-menu')
 
 
 
-const menuIcon = document.querySelector('.menuIcon');
-const menuList = document.querySelector('.newMenuList');
+//Giochi
+
+$giochi.addEventListener("mouseover", (event) => {
+    $giochiMenù.style.display = "flex";
+  } 
+)
+
+$giochiMenù.addEventListener("mouseover", (event) => {
+  $giochiMenù.style.display = "flex";
+} 
+)
 
 
-menuIcon.addEventListener('click', function() {
-  menuList.classList.toggle('open');
-});
 
-const titles = document.querySelectorAll('.title');
+$giochiMenù.addEventListener("mouseleave", (event) => {
+  setTimeout(() => {
+    $giochiMenù.style.display = "none";
+  }, 100);
+} 
+)
 
-titles.forEach(title => {
-  title.addEventListener('click', () => {
-    const menu = title.nextElementSibling;
-    titles.forEach(t => {
-      if (t !== title) {
-        t.nextElementSibling.classList.remove('active');
-      }
-    });
-    menu.classList.toggle('active');
-  });
-});
+
+//Altre esperienze
+$altreEsperienze.addEventListener("mouseover", (event) => {
+  $altreEsperienzeMenù.style.display = "flex";
+} 
+)
+
+$altreEsperienze.addEventListener("mouseover", (event) => {
+$altreEsperienzeMenù.style.display = "flex";
+} 
+)
+
+
+
+
+$altreEsperienzeMenù.addEventListener("mouseleave", (event) => {
+setTimeout(() => {
+  $altreEsperienzeMenù.style.display = "none";
+}, 100);
+} 
+)

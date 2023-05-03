@@ -124,11 +124,13 @@ body {
     z-index: 1;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.400);
+    transition: 200ms ease-in-out ;
     
 }
 
 .card-game-in-evidency .card-box .card .logo-box img {
     width: 35%;
+    transition: 200ms ease-in-out;
 }
 
 .card-game-in-evidency .card-box .card .logo-box #PGA-Tour-l, #TS4-l, #NFS-Unbound-l {
@@ -147,7 +149,7 @@ body {
 
 
 .card-game-in-evidency .card-box .card .logo-box:hover {
-    transition: ease-in-out 2s;
+   
     background: linear-gradient(50deg, rgba(52, 52, 224, 0.70), rgba(199, 71, 71, 0.70));
 }
 

@@ -456,7 +456,7 @@ footer{
 #toggle-menu2{
     position: absolute;
     top: -570px;
-    right: 0px;
+    right: -15px;
     background-color: white;
     width: 530px;
     height: 570px;

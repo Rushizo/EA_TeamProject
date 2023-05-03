@@ -34,6 +34,19 @@ event.preventDefault();
 toggleButton(this);
 toggleList(this);
 });
+const blackTopNavbar = document.querySelector('.blackTopNavbar');
+const bottomNavbar = document.querySelector('.bottomNavbar');
+const mobileBottomNavbar = document.querySelector('.mobileBottomNavbar');
+
+window.addEventListener('scroll', function() {
+
+  if (window.pageYOffset > blackTopNavbar.offsetHeight) {
+    blackTopNavbar.style.display = 'none';
+  } else {
+    blackTopNavbar.style.display = 'flex';
+  }
+});
+
 
 
 const menuIcon = document.querySelector('.menuIcon');
@@ -57,4 +70,3 @@ titles.forEach(title => {
     menu.classList.toggle('active');
   });
 });
-

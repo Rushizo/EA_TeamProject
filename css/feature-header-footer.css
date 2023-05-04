@@ -5,6 +5,7 @@ header{
     display: flex;
     height: 400px;
     overflow-x: hidden;
+    margin-top: 56px;
 }
 
 .right-header{

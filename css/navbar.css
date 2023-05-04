@@ -1,13 +1,23 @@
 @import url(./root.css);
 
 .black-navbar{
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  transition: 200ms ease-in-out;
+  z-index: 300; 
+ 
+}
+
+.black-navbar .black-navbar-container{
+  width: 100%;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: black;
   gap: 1rem;
-  padding: 0 18px;
+  transition: 200ms ease-in-out;
+  z-index: 300; 
 }
 
 .black-navbar .logos-container{
@@ -30,6 +40,7 @@
 .black-navbar .logos-container:nth-child(3){
   height: 30px;
   fill: rgb(39, 38, 38);
+  margin-right: 30px;
 }
 
 .black-navbar .logos-container:nth-child(3) svg{
@@ -53,7 +64,8 @@
   position: fixed;
   background-color: white;
   width: 100%;
-
+  transition: 200ms ease-in-out; 
+  z-index: 200;
 }
 
 .white-navbar .three-point-container{
@@ -64,6 +76,13 @@
 
 .white-navbar .three-point-container svg{
   transform: rotate(-90deg);
+}
+
+.hamburger-menu{
+  height: 20px;
+  width: 20px ;
+  margin-left: 10px;
+  display: none;
 }
 
 .white-navbar .three-point-container:hover{
@@ -138,9 +157,8 @@
 .navbar-explore .explore-content .pop-up-menù-info{
   position: absolute;
   display: none;
-  border: 1px solid;
-  left: -45px;
-  background-color: rgba(243, 242, 242, 0.9);
+  border: 1px solid; 
+  background-color: rgba(243, 242, 242, 0.98);
   padding: 35px 25px;
   border-radius: 5px;
   gap: 2rem;
@@ -151,24 +169,24 @@
 }
 
 .navbar-explore .explore-content .giochi-menù{
-  bottom: -360px;
-
+  bottom: -340px;
+  left: -45px;
 }
 
 .navbar-explore .explore-content .altre-esperienze-menu{
-  bottom: -254px;
+  bottom: -244px;
 }
 
 .navbar-explore .explore-content .informazioni-menu{
-  bottom: -325px;
+  bottom: -297px;
 }
 
 .navbar-explore .explore-content .impegni-menu{
-  bottom: -290px;
+  bottom: -260px;
 }
 
 .navbar-explore .explore-content .risorse-menu{
-  bottom: -290px;
+  bottom: -260px;
 }
 
 .navbar-explore .explore-content .pop-up-menù-info .esplora{
@@ -182,7 +200,7 @@
 }
 
 .navbar-explore .explore-content .pop-up-menù-info .esplora-altre-esperienze{
-  width: 200px;
+  width: 150px;
 }
 
 .navbar-explore .explore-content .pop-up-menù-info .esplora-informazioni{
@@ -220,4 +238,107 @@
   display: flex;
 }
 
+.navbar-explore .altre-esperienze:hover .altre-esperienze-menu{
+  display: block;
+}
 
+.navbar-explore .informazioni:hover .informazioni-menu{
+  display: block;
+}
+
+.navbar-explore .impegni:hover .impegni-menu{
+  display: block;
+}
+
+
+.navbar-explore .risorse:hover .risorse-menu{
+  display: block
+}
+
+
+.trasparent-savior{
+  position: absolute;
+  height: 30px;
+  width: 50px;
+  bottom: -30px;
+  width: 150px;
+}
+
+.black-navbar .navbar-login{
+  height: calc(100% - 40px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.black-navbar .navbar-login .login-container{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.black-navbar .navbar-login .login-container a{
+  width: 264px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(211, 211, 211);
+  font-size: 15px;
+  gap: 0.5rem;
+  transition: 200ms ease-in-out;
+}
+
+.black-navbar .navbar-login .login-container a img{
+  height: 40px;
+}
+
+.black-navbar .navbar-login .login-container a:hover{
+  margin-top: -20px;
+}
+
+.nav-close-button{
+  position: absolute;
+  width: 12px;
+  right: 20px;
+  top: 30px;
+}
+
+.nav-close-button svg{ 
+  fill: rgb(219, 219, 219);
+}
+
+.navbar-login .close-div{
+  position: absolute;
+  top: 360px;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  z-index: -20;
+}
+
+
+
+@media (max-width: 821px){
+  .white-navbar .navbar-explore{
+    display: none;
+  }
+
+  .white-navbar .three-point-container{
+    display: none;
+  }
+
+  .hamburger-menu{
+    display: block;
+  }
+
+  .main-logo-container img{
+    width: 130px;
+  }
+
+}

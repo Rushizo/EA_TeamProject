@@ -1,70 +1,63 @@
 
-const blackNavbar = document.querySelector('.black-navbar');
-const whiteNavbar = document.querySelector('.white-navbar');
-const navbar = document.querySelector('nav')
+const $blackNavbar = document.querySelector('.black-navbar');
+const $whiteNavbar = document.querySelector('.white-navbar');
+const $navbar = document.querySelector('nav')
 
-const ScrollBar = () => {
-  if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-    whiteNavbar.style.top = "-40px";
+window.addEventListener('scroll', function() {
+
+  if (window.pageYOffset > $blackNavbar.offsetHeight) {
+    $blackNavbar.style.marginTop = "-40px";
   } else {
-    whiteNavbar.style.top = "0px";
+    $blackNavbar.style.marginTop = '0';
   }
-}
-
-
-const $giochi = document.querySelector('.giochi')
-const $altreEsperienze = document.querySelector('.altre-esperienze')
-const $informazioni = document.querySelector('.informazioni')
-const $impegni = document.querySelector('.impegni')
-const $risorse = document.querySelector('.risorse')
-
-const $giochiMenù = document.querySelector('.giochi-menù')
-const $altreEsperienzeMenù = document.querySelector('.altre-esperienze-menu')
-const $informazioniMenù = document.querySelector('.informazioni-menu')
-const $impegniMenù = document.querySelector('.impegni-menu')
-const $risorseMenù = document.querySelector('.risorse-menu')
+});
 
 
 
-//Giochi
+const $account = document.querySelector(".account");
+const $help = document.querySelector(".help");
+const $login = document.querySelector(".login");
+const $closeButton = document.querySelector(".nav-close-button")
+const $closeDiv = document.querySelector(".close-div")
+const $body = document.querySelector("body")
+const $helpDiv = document.querySelector(".help-div")
 
-$giochi.addEventListener("mouseover", (event) => {
-    $giochiMenù.style.display = "flex";
-  } 
-)
+$account.addEventListener("click", () => {
+    $blackNavbar.style.height = "400px"
+    $blackNavbar.style.position = "fixed"
+    $whiteNavbar.style.position = "relative"
+    $login.style.display = "flex"
+    $closeDiv.style.display = "block"
+    $body.style.overflow = "hidden"
+    $helpDiv.style.display = "none"
 
-$giochiMenù.addEventListener("mouseover", (event) => {
-  $giochiMenù.style.display = "flex";
-} 
-)
+})
+
+$closeButton.addEventListener("click", () => {
+  $blackNavbar.style.height = "40px"
+  $blackNavbar.style.position = "relative"
+  $whiteNavbar.style.position = "fixed"
+  $login.style.display = "none"
+  $closeDiv.style.display = "none"
+  $body.style.overflow = "auto"
+})
 
 
-
-$giochiMenù.addEventListener("mouseleave", (event) => {
-  setTimeout(() => {
-    $giochiMenù.style.display = "none";
-  }, 100);
-} 
-)
-
-
-//Altre esperienze
-$altreEsperienze.addEventListener("mouseover", (event) => {
-  $altreEsperienzeMenù.style.display = "flex";
-} 
-)
-
-$altreEsperienze.addEventListener("mouseover", (event) => {
-$altreEsperienzeMenù.style.display = "flex";
-} 
-)
+//-----------------------------------------------
 
 
 
 
-$altreEsperienzeMenù.addEventListener("mouseleave", (event) => {
-setTimeout(() => {
-  $altreEsperienzeMenù.style.display = "none";
-}, 100);
-} 
-)
+
+
+
+//------------------------------------------------
+$closeDiv.addEventListener("click", () => {
+  $blackNavbar.style.height = "40px"
+  $blackNavbar.style.position = "relative"
+  $whiteNavbar.style.position = "fixed"
+  $login.style.display = "none"
+  $helpDiv.style.display = "none"
+  $closeDiv.style.display = "none"
+  $body.style.overflow = "auto"
+})
